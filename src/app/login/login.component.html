@@ -1,0 +1,41 @@
+<div class="loginside" >
+    <h1>Login to RIYADH AIR</h1>
+    <p>
+      Earn Miles every time you fly with us and our partners. And   <br>
+      spend your Skywards Miles on a world of rewards.
+    </p>
+    <form (ngSubmit)="login()">
+      <div class="place">
+        <h3 style="font-style: italic; font-weight: 600">LOGIN</h3>
+        <input
+          type="text"
+          id="email"
+          name="email"
+          [(ngModel)]="username"
+          placeholder="Email or Frequent Flyer Number"
+          required
+        />
+        <a href="" style="color: rgb(209, 53, 79)"
+          >Forget your email or account number?</a
+        >
+        <input
+          type="password"
+          id="password"
+          name="password"
+          placeholder="Password"
+          [(ngModel)]="password"
+          required
+        />
+        <a href="" style="color: rgb(209, 53, 79)">Forget/Create Password</a>
+        <div><input type="checkbox" /> Keep me logged in on this device</div>
+        <button style="padding: 8px;background-color: rgb(209, 53, 79);color: white;border: none;border-radius: 5px;">Login</button>
+      </div>
+      <div class="vertical-line"></div>
+      <div style="width: 40%" class="second-section">
+        <h4>Not an Riyadh Air member yet?</h4>
+        <p>Register now to make the most of every mile with Riyadh Air.</p>
+        <button style="padding: 8px;border-radius: 5px;">Join Now</button>
+      </div>
+    </form>
+  </div>
+  

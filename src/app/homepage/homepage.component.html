@@ -1,0 +1,189 @@
+
+<app-navbar></app-navbar>
+<div
+  class="scrolling-section"
+  data-scroll-section-inview=""
+  style="
+    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    opacity: 1;
+    pointer-events: all;
+  "
+>
+  <section class="home-hero-section">
+    <div class="hero-section" id="hero-section">
+      <!-- Will uncomment the below video code if they provide and asked us to do vedio player -->
+      <div id="hero-animation-section">
+        <video
+          id="video-banner"
+          class="banner-image background-video videoPlay"
+          playsinline=""
+          muted=""
+          data-scroll=""
+          preload="auto"
+          data-scroll-class="videoPlay"
+          data-scroll-repeat="true"
+          data-scroll-offset="25%, 25%"
+          src="https://objectstorage.me-jeddah-1.oraclecloud.com/n/axvpubjsq7pr/b/media-files/o/RA_REVEAL_6s_DESK_EN.mp4"
+          style="width: 100%"
+          autoplay loop
+        >
+          <!-- <source
+              src="./../assets/videos/header-loop-july-cut.mp4"
+              type="video/mp4"
+            /> -->
+        </video>
+      </div>
+    </div>
+  </section>
+  <section class="home-journey-section" id="home-intro">
+    <div
+      class="title-section text-center fade-in"
+      data-scroll=""
+      data-scroll-repeat="true"
+      data-scroll-class="fade-in"
+    >
+      <h2 style="color: #230751;font-style: italic;font-weight: 700;letter-spacing: 3px;">The Future Takes Flight</h2>
+      <p style="color: #230751; font-weight: 500;">
+        The city that is already transforming the way we live is now redefining
+        the way we fly. Welcome to Riyadh Air, a brand-new chapter in the sky.
+      </p>
+    </div>
+
+    <div class="video-section">
+      <video
+        id="journey-video"
+        class="journey-video"
+        playsinline=""
+        loop=""
+        muted=""
+        src="https://objectstorage.me-jeddah-1.oraclecloud.com/n/axvpubjsq7pr/b/media-files/o/RA_16x9_REVEAL_60s_EN.mp4"
+        type="video/mp4"
+        autoplay loop
+      ></video>
+
+      <a class="play-pause play" id="play-pause"></a>
+      <a class="mute-unmute mute" id="mute-unmute"></a>
+    </div>
+  </section>
+
+  <div class="carousel-title text-center">
+    <div class="row">
+      <div class="col-12 col-md-2 col-xl-3"></div>
+      <div class="col-12 col-md-8 col-xl-6 text">
+        <h2 style="color: #230751;font-style: italic;font-weight: 700;letter-spacing: 3px;">Reaching New Heights</h2>
+        <p style="color: #230751;">
+          A new era in travel begins with Riyadh Air, serving as the Kingdom of
+          Saudi <br> Arabia’s window to the world and connecting the world to the
+          wonders of <br> Saudi Arabia.
+        </p>
+      </div>
+      <div class="col-12 col-md-2 col-xl-3"></div>
+    </div>
+  </div>
+ 
+
+  <div class="container" style="margin-bottom: 20px;">
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./../assets/images/1.jpg" class="d-block w-100" alt="First slide">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Inspired by the dynamic metropolis with a rich heritage.</h5>
+            <p>An ambitious vision for the future, Riyadh Air embodies Saudi Arabia's capital Riyadh at 40,000 ft in the sky.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="assets/images/2.jpg" class="d-block w-100" alt="Second slide">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Taking technology to new heights</h5>
+            <p>Riyadh Air will be the first digital-native airline, enabling digital innovation at every guest touchpoint for a seamless travel experience.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./../assets/images/3.jpg" class="d-block w-100" alt="Third slide">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Taking hospitality to a whole new level</h5>
+            <p>Riyadh Air will bring warm and authentic Saudi hospitality to the skies.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./../assets/images/4.jpg" class="d-block w-100" alt="Fourth slide">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Flying to 100+ destinations</h5>
+            <p>Riyadh Air will optimize the strategic location of the Kingdom of Saudi Arabia, connecting business and leisure travelers to more than 100 destinations worldwide by 2030.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./../assets/images/5.jpg" class="d-block w-100" alt="Fifth slide">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Enjoying the wonders of Saudi Arabia</h5>
+            <p>Riyadh Air will showcase Saudi Arabia's exciting cultural and natural attractions to tourists worldwide and embody the nation's authentic hospitality.</p>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </div>
+
+  <div class="glimpse-future brand-story" style="background-image: url(assets/images/Our-brand-story-Background.jpg);">
+    <div class="row">
+      <div class="col-12 col-md-7 column">
+        <div class="future-desc">
+          <div class="info">
+            <h2 style="color: #230751;font-style: italic;font-weight: 700;letter-spacing: 3px;">Our Brand Story</h2>
+            <p style="color: #230751;">
+              Inspired by the lavender blossoms that carpet Saudi Arabia, we've
+              chosen this color because it symbolizes Saudi generosity and its
+              authentic hospitality. We looked to the airplane window for
+              inspiration; Riyadh Air will serve as Saudi Arabia's window to the
+              world. The movement of birds' wings in flight and the elegant
+              curves of Arabic calligraphy, an integral pillar of Saudi culture,
+              are also essential parts of the Riyadh Air brand.
+            </p>
+            <p  style="color: #230751;">Riyadh Air will take flight toward the future of aviation.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-5 column">
+        <div class="future-video">
+          <video
+            id="future-video"
+            class="future-video"
+            playsinline=""
+            loop=""
+            autoplay=""
+            muted="" loop
+          >
+            <source
+              src="https://objectstorage.me-jeddah-1.oraclecloud.com/n/axvpubjsq7pr/b/media-files/o/our-brand-story-EN_web.mp4"
+              type="video/mp4" 
+            />
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="separator">
+    <img
+      src="https://www.riyadhair.com/assets/images/contact-bg.png"
+      alt="separator"
+      style="width: 100%;"
+    />
+  </section>
+</div>
+<app-footer></app-footer>

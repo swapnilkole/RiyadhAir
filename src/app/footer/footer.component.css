@@ -1,0 +1,205 @@
+.new-footer {
+    background-color: #230751;
+  }
+  .row {
+    margin: 10px;
+  }
+  .copyright {
+    color: #fff;
+  }
+  .menu-links {
+    color: white;
+    display: flex;
+    column-gap: 15px;
+  }
+  .menu-links a {
+    color: white;
+  }
+  
+  :root {
+    --bs-pif-primary-color: #230751;
+    --bs-pif-white-color: #ffffff;
+  }
+  
+  .footer-section,
+  footer,
+  footer * {
+    background-color: var(--bs-pif-primary-color);
+    color: var(--bs-pif-white-color);
+  }
+  
+  footer li,
+  footer a {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.8rem;
+    line-height: 24px;
+    letter-spacing: 0.04em;
+    text-decoration: none;
+    list-style: none;
+  }
+  
+  footer a:hover {
+    color: #fff;
+  }
+  
+  ul {
+    padding: 0;
+    margin: 0;
+  }
+  .new-footer .social-icons span {
+    background: red;
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    color: #fff;
+    /* background-image: url(assets/images/css_sprites_new.png); */
+    background: url(../../assets/images/css_sprites_new.png);
+  }
+  .bg-Facebook {
+    background-position: -392px -5px !important;
+    background-size: 254px 205px !important;
+  }
+  .bg-Instagram {
+    background-position: -392px -63px !important;
+    background-size: 254px 205px !important;
+  }
+  .bg-linkedin {
+    background-position: -392px -163px !important;
+    background-size: 509px 411px !important;
+  }
+  /* .bg-twitter {
+      background-position: -392px -231px;
+      background-size: 509px 411px;
+    } */
+  .bg-Threads {
+    background-position: -392px -299px !important;
+    background-size: 509px 411px !important;
+  }
+  .social-icons span.bg-twitter {
+    /* background-position: -392px -299px;
+    background-size: 48px 48px; */
+    background-image: url(../../assets/images/XIcon.png) !important;
+    background-size: cover !important; /* <------ */
+    background-repeat: no-repeat !important;
+    background-position: center center !important;
+  }
+  @media /* (min-width: 360px) and */ (max-width: 767px) {
+    .footer-section .pif-footer-wrapper .sm-first-row {
+      padding-left: 2rem;
+    }
+    .rtl .footer-section .pif-footer-wrapper .sm-first-row {
+      padding-right: 2rem;
+    }
+    .pif-footer-wrapper .footer-sm-one img {
+      height: 80px;
+    }
+  }
+  @media (min-width: 576px) and (max-width: 1400px) {
+    section.footer-section {
+      min-height: unset !important;
+    }
+  }
+  @media (min-width: 1141px) and (max-width: 1400px) {
+    .pif-footer-wrapper {
+      padding: 3rem 0 11rem 0;
+      width: 100%;
+      max-height: 35vh;
+    }
+  }
+  @media (min-width: 576px) and (max-width: 1140px) {
+    .pif-footer-wrapper {
+      padding: 3rem 0 3rem 0;
+      width: 100%;
+      max-height: 35vh;
+    }
+  }
+  
+  /* New footer */
+  
+  .new-footer {
+    padding: 5rem 5% 7.5rem;
+  }
+  
+  .new-footer .menu-links li {
+    display: inline-block;
+    padding-left: 10px;
+  }
+  .new-footer .logo-section {
+    text-align: right;
+  }
+  .new-footer .social-icons img {
+    height: 3rem;
+    width: 3rem;
+  }
+  .new-footer .pif-logo img {
+    max-width: 100%;
+  }
+  .footer-logo.horizontal,
+  .footer-logo.vertical {
+    display: inline-block;
+    max-width: 65%;
+  }
+  .footer-logo.vertical {
+    display: none;
+    max-height: 100px;
+  }
+  .new-footer .nav-section {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .new-footer .copyright {
+    text-align: center;
+    padding: 2rem 0 0;
+  }
+  .new-footer .copyright p {
+    margin: 0;
+    font-size: 0.7rem;
+  }
+  @media only screen and (max-width: 1200px) {
+    .new-footer .logo-section {
+      padding-top: 1.25rem;
+    }
+  }
+  @media only screen and (max-width: 767px) {
+    .new-footer .social-icons {
+      justify-content: center;
+      gap: 1rem;
+      order: 2;
+    }
+    .new-footer .menu-links {
+      text-align: center;
+      order: 1;
+    }
+    .new-footer .pif-logo,
+    .new-footer .ra-logo {
+      text-align: center;
+    }
+  }
+  @media only screen and (max-width: 850px) {
+    .new-footer .logo-section {
+      padding-top: 2rem;
+      text-align: center;
+    }
+  }
+  @media only screen and (max-width: 576px) {
+    .new-footer {
+      padding: 10% 5% 10%;
+    }
+    .footer-logo.horizontal {
+      display: none;
+    }
+    .footer-logo.vertical {
+      display: inline-block;
+    }
+    .new-footer .pif-logo {
+      order: 2;
+      padding-top: 2rem;
+    }
+    .new-footer .ra-logo {
+      order: 1;
+    }
+  }
+  

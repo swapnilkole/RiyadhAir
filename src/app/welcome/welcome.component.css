@@ -1,0 +1,121 @@
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styles */
+header {
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+    padding: 10px;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar-nav .nav-link {
+    color: #000;
+    font-weight: bold;
+}
+
+.user-profile {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    padding: 5%;
+}
+
+.user-profile p {
+    margin-right: 10px;
+}
+
+.user-profile a {
+    margin-left: 10px;
+}
+
+
+.banner {
+    position: relative;
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+}
+
+.banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    width: 80%;
+}
+
+.banner-text h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.benefits {
+    padding: 50px;
+}
+
+.benefits u {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.benefits h2 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.benefits p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    
+}
+
+.sss {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .sss i {
+    font-size: 20px;
+    margin-right: 20px;
+  }
+  
+  .sss a {
+    margin-right: 20px;
+    text-decoration: none;
+  }
+  
+  #search-button {
+    border: none;
+    margin-right: 20px;
+  }
+  
+  #user-profile {
+    display: flex;
+    align-items: center;
+  }
+  
+  #user-profile img {
+    height: 30px;
+    margin-right: 10px;
+  }
+  
+  #user-profile span {
+    font-size: 20px;
+  }
+  

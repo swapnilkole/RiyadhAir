@@ -1,0 +1,72 @@
+
+.place{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+  }
+  .place a{
+    margin-right: 0;
+  }
+  .vertical-line {
+    width: 1px; 
+    background-color: gray; 
+    height: 300px; 
+    margin: 0 20px;
+  }
+    
+    h1 {
+      text-align: center;
+      font-family: cursive;
+      font-weight: bold;
+    }
+    .loginside{
+      display: flex;
+      flex-direction: column;
+      margin-top: 8%;
+    }
+    
+   .loginside p{
+      text-align: center;
+      font-weight: 600;
+    }
+    
+    form {
+      border: 2px solid gray;
+      padding: 10px;
+      margin: 0 auto;
+      width: 400px;
+      display: flex;
+      width: 60%;
+      border-radius: 10px;
+      margin-bottom: 10px;
+    }
+    
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+    
+    input[type="text"],
+    input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    
+    input[type="checkbox"] {
+      margin-bottom: 20px;
+    }
+    
+   .second-section{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 8%;
+   }
+  
+   .second-section p{
+    text-align: left;
+   }
