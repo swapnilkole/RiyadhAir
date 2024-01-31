@@ -14,8 +14,19 @@
 .info{
     display: flex;
     flex-direction: column;
-    width: 70%;
+    /* width: 90%; */
     justify-content: center;
     margin-top: 20%;
-    margin-left: 5%;
+    /* margin-left: 5%; */
+}
+
+
+.scroll-container {
+    width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.scroll-container .row {
+    display: inline-block;
 }

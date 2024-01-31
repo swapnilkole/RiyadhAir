@@ -7,3 +7,13 @@
     box-sizing: border-box;
 }
 
+body{
+    background-color: #f5f8ff;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+@font-face {
+    font-family: 'quiche-sans';
+    src: url('./assets/quichesans.otf') format('woff');
+}
