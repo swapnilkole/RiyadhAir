@@ -1,11 +1,4 @@
-/* Global styles */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
 
-/* Header styles */
 header {
     background-color: #fff;
     border-bottom: 1px solid #ccc;
@@ -119,3 +112,9 @@ header {
     font-size: 20px;
   }
   
+  .card-text{
+    font-family: 'Poppins', 'sans-serif';
+    color: #000;
+    font-weight: normal;
+    font-size: 0.8rem;
+  }

@@ -1,11 +1,11 @@
-<header >
-  <nav class="navbar navbar-expand-lg" style="background-color: #fff;">
-    <a class="navbar-brand" style="color: #230751;">Riyadh Air</a>
+<header style="padding: 0px 0px 0px 10px; ">
+  <nav class="navbar navbar-expand-lg">
+    <img src="assets/images/output-onlinepngtools.png" alt="Riyadh Air" style="height: 70px;width: 60px;">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
       aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
+    <div class="collapse navbar-collapse pl-5" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item active">
           <a class="nav-link" href="#">BOOK</a>
@@ -27,17 +27,16 @@
         </li>
       </ul>
     </div>
-    
 
     <div class="sss">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="height: 20px;">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="height: 20px">
         <path
           d="M352 256c0 22.2-1.2 43.6-3.3 64H163.3c-2.2-20.4-3.3-41.8-3.3-64s1.2-43.6 3.3-64H348.7c2.2 20.4 3.3 41.8 3.3 64zm28.8-64H503.9c5.3 20.5 8.1 41.9 8.1 64s-2.8 43.5-8.1 64H380.8c2.1-20.6 3.2-42 3.2-64s-1.1-43.4-3.2-64zm112.6-32H376.7c-10-63.9-29.8-117.4-55.3-151.6c78.3 20.7 142 77.5 171.9 151.6zm-149.1 0H167.7c6.1-36.4 15.5-68.6 27-94.7c10.5-23.6 22.2-40.7 33.5-51.5C239.4 3.2 248.7 0 256 0s16.6 3.2 27.8 13.8c11.3 10.8 23 27.9 33.5 51.5c11.6 26 20.9 58.2 27 94.7zm-209 0H18.6C48.6 85.9 112.2 29.1 190.6 8.4C165.1 42.6 145.3 96.1 135.3 160zM8.1 192H131.2c-2.1 20.6-3.2 42-3.2 64s1.1 43.4 3.2 64H8.1C2.8 299.5 0 278.1 0 256s2.8-43.5 8.1-64zM194.7 446.6c-11.6-26-20.9-58.2-27-94.6H344.3c-6.1 36.4-15.5 68.6-27 94.6c-10.5 23.6-22.2 40.7-33.5 51.5C272.6 508.8 263.3 512 256 512s-16.6-3.2-27.8-13.8c-11.3-10.8-23-27.9-33.5-51.5zM135.3 352c10 63.9 29.8 117.4 55.3 151.6C112.2 482.9 48.6 426.1 18.6 352H135.3zm358.1 0c-30 74.1-93.6 130.9-171.9 151.6c25.5-34.2 45.2-87.7 55.3-151.6H493.4z" />
       </svg>
       <div id="user-profile" class="ml-2 mr-4">
         <span>IN</span>
       </div>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" style="height: 20px;">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" style="height: 20px">
         <path
           d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z" />
       </svg>
@@ -45,11 +44,35 @@
       <div id="user-profile" class="ml-2">
         <span>Prabish</span>
       </div>
+      <div>
+        <button
+        style="
+          padding: 4px 15px;
+          /* font-weight: 500; */
+          border-radius: 5px;
+          margin-left: 10px;
+          background-color: #230751;
+          color: #fff;
+        "
+        routerLink="/login"
+      >
+        Logout
+      </button>
+      </div>
     </div>
   </nav>
 </header>
-<main style="background-color: #fff;">
-  <div style="display: flex; flex-flow: column; align-items: center; width: 40%">
+<main style="background-color: #fff">
+
+  <div>
+    <img src="assets/images/riyadh-premium.avif" alt="" style="width: 100%;height: 450px;">
+
+
+  </div>
+
+  <!-- <div
+    style="display: flex; flex-flow: column; align-items: center; width: 40%"
+  >
     <div class="user-profile">
       <h3>Welcome To Riyadh Air</h3>
       <p>Mr Prabish</p>
@@ -59,31 +82,200 @@
       <p>Membership tier: Blue /1</p>
       <p>Miles: 1,650 (1,650 Miles to expire on 31 March 2027)</p>
       <div style="column-gap: 10px">
-        <button style="
-              padding: 10px 50px;
-              font-weight: 500;
-              border-radius: 5px;
-              border: none;
-              background-color: #230751;
-              color: #fff;
-            ">
+        <button
+          style="
+            padding: 10px 50px;
+            font-weight: 500;
+            border-radius: 5px;
+            border: none;
+            background-color: #230751;
+            color: #fff;
+          "
+        >
           My Account
         </button>
-        <button style="
-              padding: 8px 60px;
-              font-weight: 500;
-              border-radius: 5px;
-              margin-left: 10px;
-              background-color: #fff;
-            " routerLink="/login">
+        <button
+          style="
+            padding: 8px 60px;
+            font-weight: 500;
+            border-radius: 5px;
+            margin-left: 10px;
+            background-color: #fff;
+          "
+          routerLink="/login"
+        >
           Logout
         </button>
       </div>
     </div>
+  </div> -->
+
+
+  <div class="text-center" style="display: flex; align-items: center; justify-content: center; ">
+    <div class="card text-center shadow p-3 mb-5" style="width: 70%; margin-top: -60px;color: #230751;">
+      <div class="card-header">
+        <ul class="nav nav-tabs card-header-tabs">
+          <li class="nav-item">
+            <a class="nav-link active">Search Flights</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link">Manage booking/check in</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link ">What's on your flight</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link ">Flight Status</a>
+          </li>
+        </ul>
+      </div>
+      <div class="card-body">
+        <div style="display: flex;justify-content: space-between;margin-bottom: 30px;">
+          <div>
+            <input type="checkbox" style="margin-left: 2rem;"> Riyadh rewards
+          </div>
+          <div>
+            <a href="" style="color: rgb(224, 76, 101);">
+              Advanced search: multi-city, promo codes, partner airlines </a>
+          </div>
+        </div>
+        <input type="text" placeholder="Departure airport" style="padding: 10px 50px;margin-right: 15PX;">
+        <input type="text" placeholder="Arrival airport" style="padding: 10px 50px;margin-right: 20PX;">
+        <button
+          style="background-color: #230751;padding: 10px 50px;color: #fff;border: none;border-radius: 5px;">Continue</button>
+      </div>
+    </div>
   </div>
 
-  <div class="banner">
-    <img src="assets/images/airoplane.jpg" alt="Riyadh Air" style="height: 200px" />
+  <div class="text-center"
+    style="display: flex; align-items: center; justify-content: center;margin-bottom: 5%;">
+    <div class="card text-center" style="width: 70%;background-color: #230751;color: #fff;">
+      <div class="card-body">
+        <div style="display: flex;text-align: left;justify-content: space-around;">
+          <div>
+            <h5 style="margin-bottom: 0.3rem;
+            font-size: 1rem; line-height: 40px; font-family: 'quiche-sans'">Welcome</h5>
+            <h4 style="margin-bottom: 1rem;
+            font-size: 1.5rem; line-height: 40px; font-family: 'quiche-sans'">Prabish</h4>
+          </div>
+          <div>
+            <h5 style="margin-bottom: 0.3rem;
+            font-size: 1rem; line-height: 40px; font-family: 'quiche-sans'">Gold Member</h5>
+            <h4 style=" font-size: 1.5rem;
+            line-height: 40px; font-family: 'quiche-sans'">RA 8015 </h4>
+          </div>
+          <div>
+            <h5 style="margin-bottom: 0.3rem;
+            font-size: 1rem; line-height: 40px; font-family: 'quiche-sans'">Travel Flights</h5>
+            <h4 style=" font-size: 1.5rem;
+            line-height: 40px; font-family: 'quiche-sans'">11</h4>
+          </div>
+          <div>
+            <ul>
+              <li>
+                <a href="" style="color: #fff;display: flex;flex-direction: row;text-decoration: none; font-size: 1rem;
+                line-height: 24px; font-family: 'Poppins', 'sans-serif';">View My Account</a>
+              </li>
+              <li>
+                <a href="" style="color: #fff;display: flex;flex-direction: row;text-decoration: none; font-size: 1rem;
+                  line-height: 24px; font-family: 'Poppins', 'sans-serif';">View Statement</a>
+
+              </li>
+              <li>
+                <a href="" style="color: #fff;display: flex;flex-direction: row;text-decoration: none; font-size: 1rem;
+          line-height: 24px; font-family: 'Poppins', 'sans-serif';">Update Profile</a>
+
+              </li>
+            </ul>
+
+
+
+          </div>
+        </div>
+
+      </div>
+      <div class="card-footer ">
+        <div>
+          <p style="     font-size: 0.8rem;
+          line-height: 24px; font-family: 'Poppins', 'sans-serif';">From the best seats at top sporting events to money
+            can’t buy experiences and collector’s items, Riyadh
+            Exclusives gives you the opportunity to spend your Miles on what you love most.</p>
+          <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+
+  <div style="text-align: center; font-family: 'quiche-sans'; color: #230751; font-size: 5rem;  font-weight: bolder;">
+  <h2>Featured Destination</h2>
+  </div>
+  <div class="row px-5 mx-5 mb-5" style="text-align: center;
+      font-family: 'quiche-sans'; color: #230751; font-size: 5rem;  font-weight: bolder;">
+    <div class="col-lg-4 col-md-4 col-sm-6 mt-2">
+      <div class="card">
+        <img src="https://c.ekstatic.net/shared/images/destination/v1/airports/DXB/810x270.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h4 class="card-title">Dubai</h4>
+          <p class="card-text">Book your trip <br> <b>from INR 106,044*</b></p>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-6 mt-2">
+      <div class="card">
+        <img src="https://c.ekstatic.net/shared/images/destination/v1/airports/LHR/810x270.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h4 class="card-title">London</h4>
+          <p class="card-text">Book your trip <br> <b>from INR 295,478*</b></p>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-6  mt-2">
+      <div class="card">
+        <img src="https://c.ekstatic.net/shared/images/destination/v1/airports/AMS/810x270.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h4 class="card-title">Amsterdam</h4>
+          <p class="card-text">Book your trip <br> <b>from INR 308,952*</b></p>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-6  mt-4">
+      <div class="card">
+        <img src="https://c.ekstatic.net/shared/images/destination/v1/airports/DXB/810x270_alt_1.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h4 class="card-title">Tokyo</h4>
+          <p class="card-text">Book your trip <br> <b>from INR 325,855*</b></p>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-6  mt-4">
+      <div class="card">
+        <img src="https://c.ekstatic.net/shared/images/destination/v1/airports/SFO/810x270.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h4 class="card-title">San Francisco</h4>
+          <p class="card-text">Book your trip <br> <b>from INR 362,782*</b></p>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-6  mt-4">
+      <div class="card">
+        <img src="https://c.ekstatic.net/shared/images/destination/v1/airports/JFK/810x270.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h4 class="card-title">New York</h4>
+          <p class="card-text">Book your trip <br> <b>from INR 540,855*</b></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- <div class="banner">
+    <img
+      src="assets/images/airoplane.jpg"
+      alt="Riyadh Air"
+      style="height: 200px"
+    />
     <div class="banner-text">
       <h1>Riyadh Air</h1>
       <h4>
@@ -101,5 +293,7 @@
       experiences that will complement your lifestyle and make every trip more
       rewarding.
     </p>
-  </div>
+  </div> -->
 </main>
+
+<app-footer></app-footer>

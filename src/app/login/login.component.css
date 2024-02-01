@@ -22,7 +22,7 @@
     .loginside{
       display: flex;
       flex-direction: column;
-      margin-top: 8%;
+      /* margin-top: 4%; */
     }
     
    .loginside p{
