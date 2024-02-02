@@ -70,3 +70,12 @@
    .second-section p{
     text-align: left;
    }
+
+   @media (max-width:600px) {
+   .ng-untouched{
+    width: 90%;
+   }
+   .loginside{
+    margin-top: 15%;
+   }
+}

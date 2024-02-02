@@ -94,12 +94,19 @@
     }
     .pif-footer-wrapper .footer-sm-one img {
       height: 80px;
-    }
+
+
   }
+  .menu-links{
+    display: flex;
+  flex-flow: column;
+  }
+}
   @media (min-width: 576px) and (max-width: 1400px) {
     section.footer-section {
       min-height: unset !important;
     }
+   
   }
   @media (min-width: 1141px) and (max-width: 1400px) {
     .pif-footer-wrapper {

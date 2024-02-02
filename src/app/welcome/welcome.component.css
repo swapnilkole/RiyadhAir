@@ -118,3 +118,10 @@ header {
     font-weight: normal;
     font-size: 0.8rem;
   }
+
+  @media (max-width:600px) {
+    /* .ddd{
+     width: 120%;
+    } */
+    
+ }
