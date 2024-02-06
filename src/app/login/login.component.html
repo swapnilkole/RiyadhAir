@@ -1,12 +1,15 @@
-<div
-  style="
+<div style="
     background-image: url('assets/images/Our-brand-story-Background.jpg');
     height: 100vh;
     padding: 4% 0 0 0;
-  "
->
-  <div class="loginside">
-    <h1
+  ">
+  <div class="loginside" style="display: flex;">
+    <div class="top-img">
+      <img src="../../assets/images/riyahd_air_logo_en.svg" alt=""
+        style="height: 100px; width: 400px;filter: invert(1);">
+
+    </div>
+    <!-- <h1
       style="
         color: #230751;
         margin-bottom: 1.2rem;
@@ -16,15 +19,25 @@
       "
     >
       Login to RIYADH AIR
-    </h1>
+    </h1> -->
 
-    <p>
+    <!-- <p>
       Earn Miles every time you fly with us and our partners. And <br />
       spend your Riyadh Miles on a world of rewards.
-    </p>
-    <form (ngSubmit)="login()">
+    </p> -->
+    <form (ngSubmit)="login()" class="lora">
       <div class="place">
-        <h3
+
+        <h1 style="
+        color: #230751;
+        margin-bottom: 1.2rem;
+        font-size: 1.6rem;
+        line-height: 56px;
+        font-family: 'quiche-sans';
+      ">
+          Login to RIYADH AIR
+        </h1>
+        <!-- <h3
           style="
             margin-bottom: 1.2rem;
             font-size: 2rem;
@@ -33,56 +46,44 @@
           "
         >
           LOGIN
-        </h3>
-        <input
-          type="text"
-          id="email"
-          name="email"
-          [(ngModel)]="username"
-          placeholder="Email or Frequent Flyer Number"
-          required
-        />
-       
-        <input
-          type="password"
-          id="password"
-          name="password"
-          placeholder="Password"
-          [(ngModel)]="password"
-          required
-        />
-        <div><input type="checkbox" /> Keep me logged in on this device</div>
-        <button
-          style="
-            padding: 8px;
-            background-color: #230751;
-            color: white;
-            border: none;
-            border-radius: 5px;
-          "
-        >
+        </h3> -->
+        <div class="user-pass">
+          <div class="loooo ">
+            <img src="../../assets/images/user-interface.png">
+          </div>
+          <input type="text" id="email" name="email" [(ngModel)]="username"
+            placeholder="Mobile or Frequent Flyer Number" required />
+        </div>
+
+
+        <div class="user-pass">
+          <div class="loooo">
+            <img src="assets/images/padlock.png">
+          </div>
+          <input type="password" id="password" name="password" placeholder="Password" [(ngModel)]="password" required />
+        </div>
+        <a href="" style="color: rgb(209, 53, 79);">Forget Password/Email?</a>
+        <!-- <div><input type="checkbox" /> Keep me logged in on this device</div> -->
+        <button class="login-button">
           Login
         </button>
-        <a href="" style="color: rgb(209, 53, 79)">Forget Password/Email?</a>
+
 
       </div>
+
       <div class="vertical-line"></div>
       <div style="width: 40%" class="second-section">
-        <h4
-          style="
+        <h4 style="
             color: #230751;
             margin-bottom: 1.2rem;
             font-size: 2rem;
             line-height: 30px;
             font-family: 'quiche-sans';
-          "
-        >
+          ">
           Not an Riyadh Air member yet?
         </h4>
         <p>Register now to make the most of every mile with Riyadh Air.</p>
-        <button
-          style="padding: 8px; border-radius: 5px; background-color: #fff"
-        >
+        <button style="padding: 8px; border-radius: 5px; background-color: #fff">
           Join Now
         </button>
       </div>

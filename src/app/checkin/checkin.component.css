@@ -1,0 +1,99 @@
+body {
+    font-family: 'quiche-sans';
+    margin: 0;
+    padding: 0;
+
+}
+
+.container {
+    max-width: 70%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    /* background-color: #230751;  */
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header img {
+    width: 100px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+header h1 {
+    display: inline-block;
+    font-size: 24px;
+    margin: 0;
+    vertical-align: middle;
+}
+
+main {
+    padding: 20px 0;
+}
+
+.check-in-form {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #230751; 
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color:#4e0cb8;
+
+}
+
+button:active {
+
+    background-color:#5522a7;
+
+}
+
+
+@media (max-width:650px) {
+    .container{
+        width: 90%  !important;
+    }
+
+    .check-in-form{
+        width: 90%  !important;
+        display: contents;
+    }
+    
+}
