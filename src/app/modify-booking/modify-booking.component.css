@@ -1,0 +1,57 @@
+.img img{
+    width: 100%;
+}
+.banner{
+    font-family: 'quiche-sans';
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    justify-items: center;
+    border: 1px solid black;
+    padding: 10px;
+    background-image: url('src/assets/images/Our-brand-story-Background.jpg');
+    width: 100%;
+    background-size: cover;
+}
+
+.card{
+    border: 1px solid black;
+    width: 90%;
+}
+.card-body{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.card-body input{
+    width: 30%;
+    padding: 25px;
+}
+
+.card1{
+    margin-top: 20px;
+    text-align: left;
+    padding: 50px;
+    width: 90%;
+    border: 1px solid purple;
+    border-radius: 5px;
+}
+
+.card1 li{
+    font-family: 'Poppins', 'sans-serif' !important;
+}
+
+
+@media (max-width: 650px)  {
+    .card-body{
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+    }
+    .card-body input{
+        width: 100%;
+    }
+}

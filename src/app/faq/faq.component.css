@@ -1,0 +1,12 @@
+/* .mainn{
+    display: flex;
+    justify-content: space-between;
+} */
+
+.main-container{
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin:0 10%;
+    padding: 5% 0;
+}

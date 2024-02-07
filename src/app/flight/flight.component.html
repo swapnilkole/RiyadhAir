@@ -1,0 +1,60 @@
+<app-navbar></app-navbar>
+<div style="background-color: #230751 !important;height: 100px;">
+    <img src="" alt="">
+</div>
+
+<div class="row justify-content-center py-5"
+    style="background-image: url('assets/images/Our-brand-story-Background.jpg');width: 101%;">
+    <div style="text-align: center;    font-family: 'quiche-sans';">
+        <p>BOOK</p>
+        <h3>Book a flight</h3>
+        <p>Search for Riyadh flights and book online. See our routes <br> and schedules, and discover more about the
+            experience you <br> can look forward to on board.</p>
+    </div>
+    <div class="booking-form">
+        <div class="header">
+            <p>Log in to earn and spend Riyadh Air</p>
+            <a href="#">Advanced search: multicity, promo codes, partner airlines</a>
+        </div>
+        <form action="/search-flights" method="post">
+            <div class="input-group">
+                <input type="text" name="departureAirport" placeholder="Departure airport">
+                <input type="text" name="arrivalAirport" placeholder="Arrival airport">
+                <input type="date" name="departingDate" placeholder="Departing">
+                <input type="date" name="returningDate" placeholder="Returning">
+            </div>
+            <div class="select-group">
+                <select name="passengers">
+                    <option value="1">1 Adult</option>
+                    <option value="2">2 Adult</option>
+                    <option value="3">3 Adult</option>
+                </select>
+                <select name="class">
+                    <option value="economy">Economy Class</option>
+                    <option value="business">Business Class</option>
+                    <option value="first">First Class</option>
+                </select>
+                <button type="submit">Search flights</button>
+            </div>
+        </form>
+    </div>
+    <div class="card1" style="text-align: left;    font-family: 'quiche-sans';">
+        <h5>How to book a flight ticket with Riyadh Air</h5><br>
+        <ul>
+            <li>
+                <h6>Book a flight ticket online</h6>
+                <p>To find the right air ticket for your trip, just enter the location you’re flying from and your flight
+                    destination. Enter your dates, class of travel and the number of passengers. Select ’Search flights’ to
+                    continue with the online flight booking process and book a flight ticket that suits your travel plans.
+                </p>
+            </li>
+            <li>
+                <h6>Compare flight ticket fares</h6>
+                <p>Look out for our Best Price Guarantee mark to make sure you’re getting the best flight ticket price when you book a flight with Riyadh.</p>
+            </li>
+        </ul>
+    </div>
+</div>
+
+
+<app-footer></app-footer>

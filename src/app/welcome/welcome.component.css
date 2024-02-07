@@ -119,9 +119,19 @@ header {
     font-size: 0.8rem;
   }
 
-  @media (max-width:600px) {
-    /* .ddd{
-     width: 120%;
-    } */
-    
- }
+ 
+ 
+ @media(max-width:650px){
+  .card-body{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .card-body input{
+    width: 90%  !important;
+  }
+
+}

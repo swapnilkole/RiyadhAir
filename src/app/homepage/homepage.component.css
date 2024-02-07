@@ -34,4 +34,8 @@
     .future-desc{
         padding: 1rem 2rem 3rem 3rem !important;
     }
+    .video-section{
+        display: contents  !important;
+        width: 80%  !important; 
+    }
 }

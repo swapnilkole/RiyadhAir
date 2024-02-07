@@ -13,8 +13,10 @@
       </div>
     </div>
   </nav> -->
+
+
  <nav
-  class="navbar navbar-expand-lg"
+  class="navbar navbar-expand-lg navbar-ss"
   style="z-index: 100; position: absolute; width: 100%; padding: 20px"
 >
   <div class="container">
@@ -31,17 +33,49 @@
       aria-expanded="false"
       aria-label="Toggle navigation"
     >
-      <span class="navbar-toggler-icon"></span>
+      <span class=""><img class="labin-hamburger" src="../../assets/images/menu.png" alt=""></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup" style="font-family: 'quiche-sans'">
+    <div class="collapse navbar-collapse nav-altmark" id="navbarNavAltMarkup" style="font-family: 'quiche-sans'">
       <div class="navbar-nav">
         <a class="nav-item nav-link active" href="#">HOME</a>
-        <a class="nav-item nav-link" href="#">ABOUT US</a>
-        <a class="nav-item nav-link" href="#">MEDIA CENTER</a>
-        <a class="nav-item nav-link" href="#">CAREERS</a>
-        <a class="nav-item nav-link" href="#">CONTACT US</a>
-        <a class="nav-item nav-link" (click)="navigateToLogin()" style="cursor: pointer;">LOGIN</a>
+        <a class="nav-item nav-link" (click)="navigateToFlight()" style="cursor: pointer;">FLIGHT</a>
+        <a class="nav-item nav-link" (click)="navigateToModifyBooking()" style="cursor: pointer;">MODIFY BOOKING</a>
+        <a class="nav-item nav-link" (click)="navigateToCheckin()" style="cursor: pointer;">CHECKIN</a>
+        <a class="nav-item nav-link"  (click)="navigateToHoliday()" style="cursor: pointer;">HOLIDAY</a>
+        <a class="nav-item nav-link" (click)="navigateToFAQ()" style="cursor: pointer;">FAQ</a>
+        <a class="nav-item nav-link" *ngIf="!isLogin" (click)="navigateToLogin()" style="cursor: pointer;">LOGIN</a>
+        <a class="nav-item nav-link" *ngIf="isLogin" style="cursor: pointer;">Alex Carter</a>
+        <a class="nav-item nav-link" *ngIf="isLogin" (click)="logout()" style="cursor: pointer;">LOGOUT</a>
       </div>
     </div>
   </div>
 </nav> 
+
+<!-- <nav
+class="navbar navbar-expand-lg"
+style="z-index: 100; position: absolute; width: 100%; padding: 20px"
+>
+<div class="container">
+  <a class="navbar-brand" href="#">
+    <img src="assets/images/riyahd_air_logo_en.svg" alt="img" />
+  </a>
+  <nav role="navigation">
+  <div id="menuToggle" (click)="togglenavbar()">
+  <input type="checkbox" />
+  <span></span>
+  <span></span>
+  <span></span>
+
+  <ul id="menu"  style="font-family: 'quiche-sans'">
+    <a class="nav-item nav-link active" href="#">HOME</a>
+    <a class="nav-item nav-link" (click)="navigateToFlight()" style="cursor: pointer;">FLIGHT</a>
+    <a class="nav-item nav-link" (click)="navigateToModifyBooking()" style="cursor: pointer;">MODIFY BOOKING</a>
+    <a class="nav-item nav-link" (click)="navigateToCheckin()" style="cursor: pointer;">CHECKIN</a>
+    <a class="nav-item nav-link"  (click)="navigateToHoliday()" style="cursor: pointer;">HOLIDAY</a>
+    <a class="nav-item nav-link" (click)="navigateToFAQ()" style="cursor: pointer;">FAQ</a>
+    <a class="nav-item nav-link" *ngIf="!isLogin" (click)="navigateToLogin()" style="cursor: pointer;">LOGIN</a>
+    <a *ngIf="isLogin" style="cursor: pointer;">Alex Carter</a>
+    <a class="nav-item nav-link" *ngIf="isLogin" (click)="logout()" style="cursor: pointer;">LOGOUT</a>
+  </ul>
+</div>
+</nav> -->
