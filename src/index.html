@@ -39,9 +39,9 @@
       vertical-align: baseline;
     } */
 
-    /* html {
+    html {
       scroll-behavior: smooth;
-    } */
+    }
 
     /* HTML5 display-role reset for older browsers */
     /* article,
@@ -124,6 +124,7 @@
 
     .livery_sticky_link {
       position: fixed;
+      z-index: 100;
       bottom: 0;
       right: 0;
       width: 469px;
@@ -136,6 +137,7 @@
 
     .livery_sticky_link .content {
       height: 100%;
+     
       width: 100%;
       display: flex;
       flex-direction: row;
@@ -265,9 +267,9 @@
       border-radius: 0;
       width: 469px;
       background-color: #230751;
-      z-index: 1;
+      z-index: 1 ;
       display: none;
-      /* opacity: 0; */
+      opacity: 0;
       align-items: center;
       justify-content: center;
       box-shadow: -40px 0 80px rgba(24, 16, 16, 0.3);

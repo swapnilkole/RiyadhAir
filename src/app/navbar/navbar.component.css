@@ -17,8 +17,8 @@
   object-fit: contain;
 }
 .navbar-toggler{
-  width: 70px;
-  height: 50px;
+  width: 60px;
+  height: 37px;
 }
 
 .labin-hamburger{
@@ -31,7 +31,9 @@
 
 
 
-
+.container{
+  max-width: none;
+}
 
 
 /*
@@ -203,7 +205,12 @@
  @media(max-width:673px){ /* .contents{ display: none; } */ .burger-icon div { display: initial; }}
 
  @media  (max-width:700px){
-  
+  .navbar-nav{
+    height: 100vh;
+    gap: 3rem;
+    padding-top: 6rem;
+    cursor: pointer;
+  }
   .navbar-burger{
     background: #230751;
     width: 64%;
@@ -217,20 +224,21 @@
   .nav-altmark{
     font-family: quiche-sans;
     /* display: flex; */
-    background: red;
+    
     justify-content: end;
   }
   .navbar-nav a{
 text-align: center;
   }
   .navbar-nav{
-    background: #230751;
+   background: url("../../assets/images/mobile-menu-background.svg")no-repeat;
+   background-size: 100%;
     text-align: center;
-    width: 107%;
+    
   }
   .navbar-toggler{
-    width: 70px;
-    height: 50px;
+    width: 60px;
+    height: 37px;
   }
   .labin-hamburger{
     width: 100%;
