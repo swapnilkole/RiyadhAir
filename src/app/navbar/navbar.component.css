@@ -16,6 +16,16 @@
   width: 90%;
   object-fit: contain;
 }
+.navbar-toggler{
+  width: 70px;
+  height: 50px;
+}
+
+.labin-hamburger{
+  width: 100%;
+  height: 100%;
+  filter: invert(1);
+}
 
 
 
