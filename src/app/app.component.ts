@@ -11,8 +11,8 @@ export class AppComponent {
   title = 'RiyadhAir';
   constructor(private router:Router){
     let username=localStorage.getItem("username");
-    console.log('Login successful');
     if(username != undefined) {
+      console.log("User already loggedin");
       this.router.navigate(['/welcome']);
     }
   }

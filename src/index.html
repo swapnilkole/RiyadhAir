@@ -24,31 +24,439 @@
 
 <body>
   <app-root></app-root>
+  <style>
+    /* http://meyerweb.com/eric/tools/css/reset/ 
+ v2.0 | 20110126
+ License: none (public domain)
+*/
+
+    /* * {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      font-size: 100%;
+      font: inherit;
+      vertical-align: baseline;
+    } */
+
+    /* html {
+      scroll-behavior: smooth;
+    } */
+
+    /* HTML5 display-role reset for older browsers */
+    /* article,
+    aside,
+    details,
+    figcaption,
+    figure,
+    footer,
+    header,
+    hgroup,
+    menu,
+    nav,
+    section {
+      display: block;
+    }
+    body {
+      line-height: 1;
+    }
+    ol,
+    ul {
+      list-style: none;
+    }
+    blockquote,
+    q {
+      quotes: none;
+    }
+    blockquote:before,
+    blockquote:after,
+    q:before,
+    q:after {
+      content: "";
+      content: none;
+    }
+    table {
+      border-collapse: collapse;
+      border-spacing: 0;
+    } */
+
+    /* :root {
+      --primary-color: #230751;
+      --primary-light-color: #4c3874;
+      --height-gutter: 128px;
+      --background-shade-surface: #f5f5f5;
+    } */
+
+    /* h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: "quiche-sans";
+      font-style: normal;
+      color: white;
+    }
+
+    p,
+    li,
+    a,
+    button {
+      font-family: "Poppins", sans-serif;
+    }
+
+    .container-sm.custom {
+      padding: 0 76px;
+    }
+
+    p {
+      font-size: 1rem;
+      line-height: 24px;
+    } */
+
+    .rtl * {
+      font-family: "Noto Kufi Arabic", "Poppins" !important;
+    }
+
+    .poppins {
+      font-family: "Poppins" !important;
+    }
+
+    .livery_sticky_link {
+      position: fixed;
+      bottom: 0;
+      right: 0;
+      width: 469px;
+      height: 132px;
+      background: url(https://www.riyadhair.com/assets/images/livery_link.svg)
+        center no-repeat;
+      background-color: #230751;
+      cursor: pointer;
+    }
+
+    .livery_sticky_link .content {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: 2rem;
+    }
+    .livery_sticky_link .content h3{
+      color: white;
+    }
+
+    .livery_sticky_link .content div {
+      background-color: #fff;
+      border: none;
+      border-radius: 50%;
+      height: 60px;
+      width: 60px;
+    }
+
+    .chat_icon {
+      height: 5px;
+      width: 5px;
+    }
+
+    [data-cognigy-webchat-root]
+      [data-cognigy-webchat-toggle].webchat-toggle-button {
+      display: none;
+    }
+
+    [data-cognigy-webchat-root] [data-cognigy-webchat].webchat {
+      position: fixed;
+      bottom: 0;
+      right: 0;
+      top: 0;
+      height: auto;
+      border-radius: 0;
+      width: 469px;
+      box-shadow: -40px 0 80px rgba(24, 16, 16, 0.3);
+    }
+
+    [data-cognigy-webchat-root]
+      [data-cognigy-webchat].webchat
+      .regular-message {
+      border-radius: 0 !important;
+    }
+
+    [data-cognigy-webchat-root]
+      [data-cognigy-webchat].webchat
+      .webchat-avatar.user {
+      display: none;
+    }
+
+    [data-cognigy-webchat-root]
+      [data-cognigy-webchat].webchat
+      .webchat-typing-indicator {
+      border-radius: 0 !important;
+    }
+
+    [data-cognigy-webchat-root]
+      [data-cognigy-webchat].webchat
+      .webchat-header-bar {
+      background: white;
+      box-shadow: none;
+      color: black;
+      height: 150px;
+      justify-content: space-between;
+    }
+
+    [data-cognigy-webchat-root]
+      [data-cognigy-webchat].webchat
+      .webchat-input-menu-form {
+      border: none !important;
+    }
+
+    [data-cognigy-webchat-root]
+      [data-cognigy-webchat].webchat
+      .webchat-chat-history {
+      background-color: white;
+    }
+
+    [data-cognigy-webchat-root]
+      [data-cognigy-webchat].webchat
+      .webchat-input {
+      background: white;
+      box-shadow: none;
+    }
+
+    [data-cognigy-webchat-root]
+      [data-cognigy-webchat].webchat
+      .webchat-header-logo {
+      background-image: url("https://cognigydemoimages.blob.core.windows.net/demoimages/Riyadh-Air-Logo-dark on transparent cropped.png");
+      margin-left: 10px;
+      width: 100px;
+      height: 100px;
+    }
+    [data-cognigy-webchat-root]
+      [data-cognigy-webchat].webchat
+      .webchat-header-close-button {
+      fill: #230751;
+      background-color: white;
+    }
+    [data-cognigy-webchat-root]
+      [data-cognigy-webchat].webchat
+      .webchat-header-close-button:hover {
+      fill: #230751;
+      background-color: white;
+    }
+
+    [data-cognigy-webchat-root]
+      [data-cognigy-webchat].webchat
+      .webchat-header-title {
+      display: none;
+    }
+
+    [data-cognigy-webchat-root]
+      [data-cognigy-webchat].webchat
+      .webchat-avatar.bot {
+      border: none;
+    }
+
+    .webchat-overlay {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      top: 0;
+      height: auto;
+      border-radius: 0;
+      width: 469px;
+      background-color: #230751;
+      z-index: 1;
+      display: none;
+      /* opacity: 0; */
+      align-items: center;
+      justify-content: center;
+      box-shadow: -40px 0 80px rgba(24, 16, 16, 0.3);
+    }
+
+    @keyframes show-overlay {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    @keyframes hide-overlay {
+      from {
+        opacity: 1;
+      }
+      to {
+        opacity: 0;
+      }
+    }
+
+    .webchat-overlay-display {
+      display: flex;
+      animation-name: show-overlay;
+      animation-duration: 1s;
+    }
+
+    .webchat-overlay-hide {
+      animation-name: hide-overlay;
+      animation-duration: 1s;
+    }
+
+    [data-cognigy-webchat-root]
+      [data-cognigy-webchat].webchat
+      .webchat-input-button-send {
+      border-radius: 20px;
+      background-color: white;
+    }
+
+    /* width */
+    ::-webkit-scrollbar {
+      width: 4px;
+      background: #230751;
+    }
+  </style>
+
+  
+
   <script src="https://github.com/Cognigy/WebchatWidget/releases/latest/download/webchat.js"></script>
   <script>
-    // initWebchat(
+    function toggleWebchat(page) {
+      let username = localStorage.getItem("username");
+    console.log("Username ====> "+username);
+    if(username != undefined){
+      console.log("With Username");
+      initWebchat(
+      "https://endpoint-trial.cognigy.ai/7d2d091ed8354f7526e8c79df4f32a635f02c576f54406b93972d516776f5158",
+      {
+        userId: username,
+        settings: {
+          disableBranding: true,
+          designTemplate: 2,
+          startBehavior: "injection",
+          getStartedText: "Hi",
+          getStartedData: {
+            origin: page,
+          },
+        },
+      }
+    ).then((webchat) => {
+      window.cognigyWebchat = webchat;
+    });
+    } else {
+      console.log("Without Username");
+      initWebchat(
+      "https://endpoint-trial.cognigy.ai/7d2d091ed8354f7526e8c79df4f32a635f02c576f54406b93972d516776f5158",
+      {
+        settings: {
+          disableBranding: true,
+          designTemplate: 2,
+          startBehavior: "injection",
+          getStartedText: "Hi",
+          getStartedData: {
+          origin: page,
+          },
+        },
+      }
+    ).then((webchat) => {
+      window.cognigyWebchat = webchat;
+    });
+    }
+      
+      document.getElementById("webchat-toggle-button").style.display = "none";
+
+      document
+        .getElementById("webchat-overlay")
+        .classList.add("webchat-overlay-display");
+      document.getElementById("webchat-overlay").style.opacity = 1;
+
+      setTimeout(() => {
+        document
+          .getElementById("webchat-overlay")
+          .classList.remove("webchat-overlay-display");
+        document
+          .getElementById("webchat-overlay")
+          .classList.add("webchat-overlay-hide");
+        document.getElementById("webchat-overlay").style.opacity = 0;
+
+        console.log(window.cognigyWebchat);
+        window.cognigyWebchat.toggle();
+      }, 2000);
+    }
+    // let username = localStorage.getItem("username");
+    // console.log("Username ====> "+username);
+    // if(username != undefined){
+    //   console.log("With Username");
+    //   initWebchat(
     //   "https://endpoint-trial.cognigy.ai/7d2d091ed8354f7526e8c79df4f32a635f02c576f54406b93972d516776f5158",
     //   {
-    //     userId: +917219717119,
+    //     userId: username,
     //     settings: {
-    //       disableBranding: true,S
+    //       disableBranding: true,
     //       designTemplate: 2,
     //       startBehavior: "injection",
     //       getStartedText: "Hi",
     //       getStartedData: {
-    //         origin: "New Booking",
+    //         origin: "Index",
     //       },
-    //     },S
+    //     },
     //   }
-    // );
+    // ).then((webchat) => {
+    //   window.cognigyWebchat = webchat;
+    // });
+    // } else {
+    //   console.log("Without Username");
+    //   initWebchat(
+    //   "https://endpoint-trial.cognigy.ai/7d2d091ed8354f7526e8c79df4f32a635f02c576f54406b93972d516776f5158",
+    //   {
+    //     settings: {
+    //       disableBranding: true,
+    //       designTemplate: 2,
+    //       startBehavior: "injection",
+    //       getStartedText: "Hi",
+    //       getStartedData: {
+    //       origin: "Index",
+    //       },
+    //     },
+    //   }
+    // ).then((webchat) => {
+    //   window.cognigyWebchat = webchat;
+    // });
+    // }
 
-    initWebchat(
-      "https://endpoint-trial.cognigy.ai/7d2d091ed8354f7526e8c79df4f32a635f02c576f54406b93972d516776f5158"
-    );
-    // initWebchat(
-    //   "https://endpoint-trial.cognigy.ai/df88cea49e15ecdf733abf3d21264b99d8bd3606d74563943f5474a0329930b2"
-    // );
   </script>
+
+<!-- <div class="webchat-overlay" id="webchat-overlay">
+  <img
+    height="150"
+    src="https://cognigydemoimages.blob.core.windows.net/maxdonner/Riyadh-Air-Logo-white%20on%20transparent%20cropped.png"
+    alt="riyadh air logo"
+  />
+</div>
+
+<div
+  class="livery_sticky_link"
+  id="webchat-toggle-button"
+  onclick="toggleWebchat()"
+>
+  <div class="content">
+    <h3>Chat with Assistant</h3>
+    <div>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="-8 -8 40 40"
+        stroke-width="1.5"
+        stroke="currentColor"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M12 20.25c4.97 0 9-3.694 9-8.25s-4.03-8.25-9-8.25S3 7.444 3 12c0 2.104.859 4.023 2.273 5.48.432.447.74 1.04.586 1.641a4.483 4.483 0 0 1-.923 1.785A5.969 5.969 0 0 0 6 21c1.282 0 2.47-.402 3.445-1.087.81.22 1.668.337 2.555.337Z"
+        />
+      </svg>
+    </div>
+  </div>
+</div> -->
 </body>
 
 </html>

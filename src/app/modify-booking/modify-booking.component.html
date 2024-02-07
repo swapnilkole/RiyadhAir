@@ -1,3 +1,36 @@
+<div class="webchat-overlay" id="webchat-overlay">
+    <img
+      height="150"
+      src="https://cognigydemoimages.blob.core.windows.net/maxdonner/Riyadh-Air-Logo-white%20on%20transparent%20cropped.png"
+      alt="riyadh air logo"
+    />
+  </div>
+  
+  <div
+    class="livery_sticky_link"
+    id="webchat-toggle-button"
+    onclick="toggleWebchat('modify-booking')"
+  >
+    <div class="content">
+      <h3>Chat with Assistant</h3>
+      <div>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="-8 -8 40 40"
+          stroke-width="1.5"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M12 20.25c4.97 0 9-3.694 9-8.25s-4.03-8.25-9-8.25S3 7.444 3 12c0 2.104.859 4.023 2.273 5.48.432.447.74 1.04.586 1.641a4.483 4.483 0 0 1-.923 1.785A5.969 5.969 0 0 0 6 21c1.282 0 2.47-.402 3.445-1.087.81.22 1.668.337 2.555.337Z"
+          />
+        </svg>
+      </div>
+    </div>
+  </div>
+
 <app-navbar></app-navbar>
 <div style="background-color: #230751 !important;height: 100px;">
     <img src="" alt="">
@@ -18,7 +51,7 @@
         <div class="card-body">
             <input type="text" id="lastName" class="form-control" placeholder="Last Name">
             <input type="text" id="bookingReference" class="form-control" placeholder="Booking Reference">
-            <button type='submit' class='btn btn-danger'>Retrieve Booking</button>
+            <button type='submit' class='btn' style="background-color: #230751; color: #fff;">Retrieve Booking</button>
         </div>
     </div>
 

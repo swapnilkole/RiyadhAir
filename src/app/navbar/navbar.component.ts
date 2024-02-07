@@ -10,8 +10,8 @@ export class NavbarComponent {
   isLogin: boolean = false;
   constructor(private router: Router) {
     let username = localStorage.getItem('username');
-    console.log('Login successful');
     if (username != undefined) {
+      console.log("User already loggedin")
       this.isLogin = true;
     }
   }

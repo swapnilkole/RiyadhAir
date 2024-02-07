@@ -9,4 +9,10 @@
     width: 80%;
     margin:0 10%;
     padding: 5% 0;
+    z-index: -1;
+    position: relative;
+}
+
+.card{
+    /* z-index: -1; */
 }
