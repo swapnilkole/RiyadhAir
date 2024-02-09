@@ -95,5 +95,22 @@ button:active {
         width: 90%  !important;
         display: contents;
     }
+
+    .cardss {
+        /* display: flex;  */
+        width: 90%;
+        display: contents;
+    }
     
+}
+
+.cardss{
+    padding: 5%;
+}
+.cardss p {
+    font-size: small;
+}
+
+.card-body {
+    height: 230px;
 }

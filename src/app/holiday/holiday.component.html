@@ -40,7 +40,7 @@
             font-size: 1.2rem;
         }
 
-        .cardss{
+        /* .cardss{
             padding: 5%;
         }
         .cardss p {
@@ -53,11 +53,35 @@
 
         @media (max-width: 650px) {
             .cardss {
-                /* display: flex;  */
                 width: 90%;
                 display: contents;
             }
-        }
+        } */
+
+        .card-text{
+    font-family: 'Poppins', 'sans-serif';
+    color: #000;
+    font-weight: normal;
+    font-size: 0.8rem;
+  }
+
+ 
+ 
+ @media(max-width:650px){
+  .card-body{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .card-body input{
+    width: 90%  !important;
+  }
+
+
+}
     </style>
 </head>
 
@@ -107,7 +131,7 @@
         </div>
     </div>
 
-    <div class="row  cardss" style="text-align: center;
+    <!-- <div class="row  cardss" style="text-align: center;
     font-family: 'quiche-sans'; color: #230751; font-size: 5rem;padding-top: 5%;">
         <div class="col-lg-4 col-md-4 col-sm-6 mt-2">
             <div class="card">
@@ -178,7 +202,76 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
+
+    <div style="text-align: center; font-family: 'quiche-sans'; color: #230751; font-size: 5rem;  font-weight: bolder;margin: 3rem;">
+        <h2>Featured Destination</h2>
+      </div>
+    
+      <div class="row px-5 mx-5 pb-5 " style="text-align: center;
+          font-family: 'quiche-sans'; color: #230751; font-size: 5rem;  font-weight: bolder;">
+        <div class="col-lg-4 col-md-4 col-sm-6 mt-2">
+          <div class="card">
+            <img src="https://c.ekstatic.net/shared/images/destination/v1/airports/DXB/810x270.jpg" class="card-img-top"
+              alt="...">
+            <div class="card-body">
+              <h4 class="card-title">Dubai</h4>
+              <p class="card-text">Book your trip <br> <b>from INR 106,044*</b></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-6 mt-2">
+          <div class="card">
+            <img src="https://c.ekstatic.net/shared/images/destination/v1/airports/LHR/810x270.jpg" class="card-img-top"
+              alt="...">
+            <div class="card-body">
+              <h4 class="card-title">London</h4>
+              <p class="card-text">Book your trip <br> <b>from INR 295,478*</b></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-6  mt-2">
+          <div class="card">
+            <img src="https://c.ekstatic.net/shared/images/destination/v1/airports/AMS/810x270.jpg" class="card-img-top"
+              alt="...">
+            <div class="card-body">
+              <h4 class="card-title">Amsterdam</h4>
+              <p class="card-text">Book your trip <br> <b>from INR 308,952*</b></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-6  mt-4">
+          <div class="card">
+            <img src="https://c.ekstatic.net/shared/images/destination/v1/airports/DXB/810x270_alt_1.jpg"
+              class="card-img-top" alt="...">
+            <div class="card-body">
+              <h4 class="card-title">Tokyo</h4>
+              <p class="card-text">Book your trip <br> <b>from INR 325,855*</b></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-6  mt-4">
+          <div class="card">
+            <img src="https://c.ekstatic.net/shared/images/destination/v1/airports/SFO/810x270.jpg" class="card-img-top"
+              alt="...">
+            <div class="card-body">
+              <h4 class="card-title">San Francisco</h4>
+              <p class="card-text">Book your trip <br> <b>from INR 362,782*</b></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-6  mt-4">
+          <div class="card">
+            <img src="https://c.ekstatic.net/shared/images/destination/v1/airports/JFK/810x270.jpg" class="card-img-top"
+              alt="...">
+            <div class="card-body">
+              <h4 class="card-title">New York</h4>
+              <p class="card-text">Book your trip <br> <b>from INR 540,855*</b></p>
+            </div>
+          </div>
+        </div>
+        
+      </div>
 </body>
 
 </html>
