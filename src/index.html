@@ -130,17 +130,18 @@
 
     .ac-actionSet .ac-pushButton {
       cursor: pointer;
-  border: none;
-  padding: 12px 24px;
-  border-radius: 5px;
-  font-size: 14px;
-  letter-spacing: 1px;
-  transition: 0.3s;
-  background-color: rgb(44, 10, 90);
-  color: white;
+      border: none;
+      padding: 12px 24px;
+      border-radius: 5px;
+      font-size: 14px;
+      letter-spacing: 1px;
+      transition: 0.3s;
+      background-color: rgb(44, 10, 90);
+      color: white;
 
-      
+
     }
+
     .ac-input {
       border-style: solid;
       border-radius: 5px;
@@ -150,7 +151,7 @@
       background-color: rgb(242, 241, 246);
       height: 35px;
     }
-    
+
     .ac-input:focus {
       border-style: solid;
       border-radius: 5px;
@@ -158,6 +159,7 @@
       border-color: rgb(191, 189, 205) !important;
 
     }
+
     .livery_sticky_link {
       position: fixed;
       z-index: 100;
@@ -165,8 +167,7 @@
       right: 0;
       width: 469px;
       height: 132px;
-      background: url(https://www.riyadhair.com/assets/images/livery_link.svg)
-        center no-repeat;
+      background: url(https://www.riyadhair.com/assets/images/livery_link.svg) center no-repeat;
       background-color: #230751;
       cursor: pointer;
     }
@@ -180,7 +181,8 @@
       align-items: center;
       gap: 2rem;
     }
-    .livery_sticky_link .content h3{
+
+    .livery_sticky_link .content h3 {
       color: white;
     }
 
@@ -199,28 +201,32 @@
 
     [data-cognigy-webchat-root] .webchat-quick-reply-template-root {
       width: 569px;
-     
 
-}
 
-[data-cognigy-webchat-root] .webchat-quick-reply-template-replies-container {
-  display: flex;
-  flex-direction: row;
- 
-}
+    }
+
+    [data-cognigy-webchat-root] .webchat-quick-reply-template-replies-container {
+      display: flex;
+      flex-direction: row;
+
+    }
 
 
     [data-cognigy-webchat-root] .webchat-quick-reply-template-replies-container .webchat-quick-reply-template-reply {
-      opacity: 0; /* Start fully transparent */
-  animation: fadeIn 500ms ease-in forwards; /* Apply the fadeIn animation */
-      text-align: center; /* Centers the text and icon horizontally */
-    display: flex;
-    gap: 3px;
+      opacity: 0;
+      /* Start fully transparent */
+      animation: fadeIn 500ms ease-in forwards;
+      /* Apply the fadeIn animation */
+      text-align: center;
+      /* Centers the text and icon horizontally */
+      display: flex;
+      gap: 3px;
 
-    font-weight: 600;
-    flex-direction: column; /* Stacks items vertically */
-    align-items: center; 
-    color: white;
+      font-weight: 600;
+      flex-direction: column;
+      /* Stacks items vertically */
+      align-items: center;
+      color: white;
       animation: "Some animation";
       background-color: #230751;
       background-color: #230751;
@@ -231,7 +237,7 @@
     }
 
     [data-cognigy-webchat-root] .webchat-quick-reply-template-replies-container .webchat-quick-reply-template-reply img {
- 
+
       width: 50px;
       height: 50px;
     }
@@ -245,14 +251,17 @@
 
     @keyframes fadeIn {
       from {
-    opacity: 0;
-    transform: translateY(20px); /* Start 20 pixels above */
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0); /* End at its original position */
-  }
-}
+        opacity: 0;
+        transform: translateY(20px);
+        /* Start 20 pixels above */
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+        /* End at its original position */
+      }
+    }
 
     [data-cognigy-webchat-root] [data-cognigy-webchat-toggle].webchat-toggle-button {
       display: none;
@@ -266,7 +275,7 @@
       height: auto;
       border-radius: 0;
       width: 569px;
-      
+
       box-shadow: -40px 0 80px rgba(24, 16, 16, 0.3);
     }
 
@@ -278,14 +287,17 @@
 
       border-radius: 6px !important;
 
-}
+    }
 
-[data-cognigy-webchat-root] .webchat-quick-reply-template-header-message { border-radius: 6px !important; }
-[data-cognigy-webchat-root] [data-cognigy-webchat].webchat .regular-message.user {
+    [data-cognigy-webchat-root] .webchat-quick-reply-template-header-message {
+      border-radius: 6px !important;
+    }
 
-border-radius: 6px !important;
+    [data-cognigy-webchat-root] [data-cognigy-webchat].webchat .regular-message.user {
 
-}
+      border-radius: 6px !important;
+
+    }
 
     [data-cognigy-webchat-root] [data-cognigy-webchat].webchat .webchat-avatar.user {
       display: none;
@@ -401,51 +413,64 @@ border-radius: 6px !important;
     }
   </style>
 
-  
+
 
   <script src="https://github.com/Cognigy/WebchatWidget/releases/latest/download/webchat.js"></script>
   <script>
     function toggleWebchat(page) {
       let username = localStorage.getItem("username");
-    console.log("Username ====> "+username);
-    if(username != undefined){
-      console.log("With Username");
-      initWebchat(
-      "https://endpoint-trial.cognigy.ai/7d2d091ed8354f7526e8c79df4f32a635f02c576f54406b93972d516776f5158",
-      {
-        userId: username,
-        settings: {
-          disableBranding: true,
-          designTemplate: 2,
-          startBehavior: "injection",
-          getStartedText: "Hi",
-          getStartedData: {
-            origin: page,
-          },
-        },
+      console.log("Username ====> " + username);
+      if (username != undefined) {
+        console.log("With Username");
+        initWebchat(
+          "https://endpoint-trial.cognigy.ai/7d2d091ed8354f7526e8c79df4f32a635f02c576f54406b93972d516776f5158",
+          {
+            userId: username,
+            settings: {
+              disableBranding: true,
+              designTemplate: 2,
+              startBehavior: "injection",
+              getStartedText: "Hi",
+              getStartedData: {
+                origin: page,
+                authenticated: true
+              },
+            },
+          }
+        ).then((webchat) => {
+          webchat.registerAnalyticsService(event => {
+            if (event.type === "webchat/incoming-message") {
+              console.log("incoming message: " + event.payload.text);
+            }
+          });
+          window.cognigyWebchat = webchat;
+        });
+      } else {
+        console.log("Without Username");
+        initWebchat(
+          "https://endpoint-trial.cognigy.ai/7d2d091ed8354f7526e8c79df4f32a635f02c576f54406b93972d516776f5158",
+          {
+            settings: {
+              disableBranding: true,
+              designTemplate: 2,
+              startBehavior: "injection",
+              getStartedText: "Hi",
+              getStartedData: {
+                origin: page,
+                authenticated: false
+              },
+            },
+          }
+        ).then((webchat) => {
+          webchat.registerAnalyticsService(event => {
+            if (event.type === "webchat/incoming-message") {
+              console.log("incoming message: " + event.payload.text);
+            }
+          });
+          window.cognigyWebchat = webchat;
+          
+        });
       }
-    ).then((webchat) => {
-      window.cognigyWebchat = webchat;
-    });
-    } else {
-      console.log("Without Username");
-      initWebchat(
-      "https://endpoint-trial.cognigy.ai/7d2d091ed8354f7526e8c79df4f32a635f02c576f54406b93972d516776f5158",
-      {
-        settings: {
-          disableBranding: true,
-          designTemplate: 2,
-          startBehavior: "injection",
-          getStartedText: "Hi",
-          getStartedData: {
-          origin: page,
-          },
-        },
-      }
-    ).then((webchat) => {
-      window.cognigyWebchat = webchat;
-    });
-    }
       
       document.getElementById("webchat-toggle-button").style.display = "none";
 
@@ -510,7 +535,7 @@ border-radius: 6px !important;
 
   </script>
 
-<!-- <div class="webchat-overlay" id="webchat-overlay">
+  <!-- <div class="webchat-overlay" id="webchat-overlay">
   <img
     height="150"
     src="https://cognigydemoimages.blob.core.windows.net/maxdonner/Riyadh-Air-Logo-white%20on%20transparent%20cropped.png"
