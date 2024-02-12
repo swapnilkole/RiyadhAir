@@ -10,11 +10,16 @@ export class LoginComponent {
   username: string = '';
   password: string = '';
 
-  persona = 3;
 
+  persona = 3;
+  origin= "login";
+ 
   constructor(private router: Router,private activatedRoute: ActivatedRoute) {
     this.activatedRoute.queryParams.subscribe(params => {
       if(params['persona']){
+        if(params['persona'] === 'any'){
+          this.origin = params['origin'];
+        }
         this.persona = params['persona'];
       }
       console.log("Persona : "+this.persona);

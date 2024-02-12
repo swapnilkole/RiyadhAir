@@ -9,8 +9,8 @@
 <div
   class="livery_sticky_link"
   id="webchat-toggle-button"
-  id="webchat-toggle-button" [attr.data-persona]="persona"
-  onclick="toggleWebchat('login', this.getAttribute('data-persona'))"
+  id="webchat-toggle-button" [attr.data-persona]="persona" [attr.data-origin]="origin"
+  onclick="toggleWebchat(this.getAttribute('data-origin'), this.getAttribute('data-persona'))"
 >
   <div class="content">
     <h3>Chat with Assistant</h3>

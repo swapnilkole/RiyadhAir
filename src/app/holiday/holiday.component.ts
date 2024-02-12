@@ -8,9 +8,13 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class HolidayComponent {
   persona = 3;
+  origin= "holiday";
   constructor(private activatedRoute: ActivatedRoute){
     this.activatedRoute.queryParams.subscribe(params => {
       if(params['persona']){
+        if(params['persona'] === 'any'){
+          this.origin = params['origin'];
+        }
         this.persona = params['persona'];
       }
       console.log("Persona : "+this.persona);
