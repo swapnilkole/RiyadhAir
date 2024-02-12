@@ -13,7 +13,7 @@ export class AppComponent {
     let username=localStorage.getItem("username");
     if(username != undefined) {
       console.log("User already loggedin");
-      this.router.navigate(['/welcome']);
+      // this.router.navigate(['/welcome']);
     }
   }
 

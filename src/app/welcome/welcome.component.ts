@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Router } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-welcome',
@@ -8,8 +8,15 @@ import { Router } from '@angular/router';
 })
 export class WelcomeComponent {
 
-constructor(private router:Router){
-  
+  persona = 3;
+
+constructor(private router:Router,private activatedRoute: ActivatedRoute){
+  this.activatedRoute.queryParams.subscribe(params => {
+    if(params['persona']){
+      this.persona = params['persona'];
+    }
+    console.log("Persona : "+this.persona);
+  });
 }
 navigateToLogin() {
   this.router.navigate(['/login']);

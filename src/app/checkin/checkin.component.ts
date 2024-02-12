@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-checkin',
@@ -7,4 +8,14 @@ import { Component } from '@angular/core';
 })
 export class CheckinComponent {
 
+  persona = 3;
+ 
+  constructor(private activatedRoute: ActivatedRoute){
+    this.activatedRoute.queryParams.subscribe(params => {
+      if(params['persona']){
+        this.persona = params['persona'];
+      }
+      console.log("Persona : "+this.persona);
+    });
+  }
 }

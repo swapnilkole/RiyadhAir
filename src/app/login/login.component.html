@@ -9,7 +9,8 @@
 <div
   class="livery_sticky_link"
   id="webchat-toggle-button"
-  onclick="toggleWebchat('login')"
+  id="webchat-toggle-button" [attr.data-persona]="persona"
+  onclick="toggleWebchat('login', this.getAttribute('data-persona'))"
 >
   <div class="content">
     <h3>Chat with Assistant</h3>

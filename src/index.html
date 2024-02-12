@@ -417,10 +417,66 @@
 
   <script src="https://github.com/Cognigy/WebchatWidget/releases/latest/download/webchat.js"></script>
   <script>
-    function toggleWebchat(page) {
+    function toggleWebchat(page, persona) {
+      console.log("Index Persona ==> " + persona)
       let username = localStorage.getItem("username");
       console.log("Username ====> " + username);
       if (username != undefined) {
+        //
+        let startData = {
+          origin: page,
+          authenticated: true
+        }
+ 
+        // if (page === 'Welcome') {
+        //   startData = {
+        //     origin: "dashboard",
+        //     customer: {
+        //       firstName: "Alex",
+        //       lastName: "Carter",
+        //       loyaltyTier: "Gold"
+        //     },
+        //     authenticated: true
+        //   }
+        // } else {
+ 
+        // }
+ 
+        if (persona == 1) {
+          startData = {
+            origin: page,
+            details: {
+              from: "London",
+              to: "Riyadh",
+              departDate: "01-03-2024",
+              returnDate: "11-03-2024",
+              travelers: "2",
+              class: "business"
+            },
+            authenticated: false
+          }
+ 
+        } else if (persona == 2) {
+ 
+          startData = {
+            origin: page,
+            customer: {
+              firstName: "Alex",
+              lastName: "Carter",
+              loyaltyTier: "Gold"
+            },
+            authenticated: true
+          }
+ 
+        } else {
+ 
+          startData = {
+            origin: page,
+            authenticated: false
+          }
+ 
+        }
+ 
         console.log("With Username");
         initWebchat(
           "https://endpoint-trial.cognigy.ai/7d2d091ed8354f7526e8c79df4f32a635f02c576f54406b93972d516776f5158",
@@ -431,10 +487,7 @@
               designTemplate: 2,
               startBehavior: "injection",
               getStartedText: "Hi",
-              getStartedData: {
-                origin: page,
-                authenticated: true
-              },
+              getStartedData: startData,
             },
           }
         ).then((webchat) => {
@@ -447,6 +500,47 @@
         });
       } else {
         console.log("Without Username");
+ 
+        let startData = {
+          origin: page,
+          authenticated: false
+        }
+ 
+        if (persona == 1) {
+          startData = {
+            origin: page,
+            details: {
+              from: "London",
+              to: "Riyadh",
+              departDate: "01-03-2024",
+              returnDate: "11-03-2024",
+              travelers: "2",
+              class: "business"
+            },
+            authenticated: false
+          }
+ 
+        } else if (persona == 2) {
+ 
+          startData = {
+            origin: page,
+            customer: {
+              firstName: "Alex",
+              lastName: "Carter",
+              loyaltyTier: "Gold"
+            },
+            authenticated: true
+          }
+ 
+        } else {
+ 
+          startData = {
+            origin: page,
+            authenticated: false
+          }
+ 
+        }
+ 
         initWebchat(
           "https://endpoint-trial.cognigy.ai/7d2d091ed8354f7526e8c79df4f32a635f02c576f54406b93972d516776f5158",
           {
@@ -455,10 +549,7 @@
               designTemplate: 2,
               startBehavior: "injection",
               getStartedText: "Hi",
-              getStartedData: {
-                origin: page,
-                authenticated: false
-              },
+              getStartedData: startData,
             },
           }
         ).then((webchat) => {
@@ -468,17 +559,17 @@
             }
           });
           window.cognigyWebchat = webchat;
-          
+ 
         });
       }
-      
-      document.getElementById("webchat-toggle-button").style.display = "none";
-
+ 
+      // document.getElementById("webchat-toggle-button").style.display = "none";
+ 
       document
         .getElementById("webchat-overlay")
         .classList.add("webchat-overlay-display");
       document.getElementById("webchat-overlay").style.opacity = 1;
-
+ 
       setTimeout(() => {
         document
           .getElementById("webchat-overlay")
@@ -487,52 +578,12 @@
           .getElementById("webchat-overlay")
           .classList.add("webchat-overlay-hide");
         document.getElementById("webchat-overlay").style.opacity = 0;
-
+ 
         console.log(window.cognigyWebchat);
         window.cognigyWebchat.toggle();
       }, 2000);
     }
-    // let username = localStorage.getItem("username");
-    // console.log("Username ====> "+username);
-    // if(username != undefined){
-    //   console.log("With Username");
-    //   initWebchat(
-    //   "https://endpoint-trial.cognigy.ai/7d2d091ed8354f7526e8c79df4f32a635f02c576f54406b93972d516776f5158",
-    //   {
-    //     userId: username,
-    //     settings: {
-    //       disableBranding: true,
-    //       designTemplate: 2,
-    //       startBehavior: "injection",
-    //       getStartedText: "Hi",
-    //       getStartedData: {
-    //         origin: "Index",
-    //       },
-    //     },
-    //   }
-    // ).then((webchat) => {
-    //   window.cognigyWebchat = webchat;
-    // });
-    // } else {
-    //   console.log("Without Username");
-    //   initWebchat(
-    //   "https://endpoint-trial.cognigy.ai/7d2d091ed8354f7526e8c79df4f32a635f02c576f54406b93972d516776f5158",
-    //   {
-    //     settings: {
-    //       disableBranding: true,
-    //       designTemplate: 2,
-    //       startBehavior: "injection",
-    //       getStartedText: "Hi",
-    //       getStartedData: {
-    //       origin: "Index",
-    //       },
-    //     },
-    //   }
-    // ).then((webchat) => {
-    //   window.cognigyWebchat = webchat;
-    // });
-    // }
-
+ 
   </script>
 
   <!-- <div class="webchat-overlay" id="webchat-overlay">

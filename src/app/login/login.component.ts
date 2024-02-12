@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Router } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -10,7 +10,16 @@ export class LoginComponent {
   username: string = '';
   password: string = '';
 
-  constructor(private router: Router) {}
+  persona = 3;
+
+  constructor(private router: Router,private activatedRoute: ActivatedRoute) {
+    this.activatedRoute.queryParams.subscribe(params => {
+      if(params['persona']){
+        this.persona = params['persona'];
+      }
+      console.log("Persona : "+this.persona);
+    });
+  }
 
   // login() {
   //   if (this.username ==='prabish' && this.password ==='1234') {
@@ -38,4 +47,5 @@ export class LoginComponent {
       this.router.navigate(['/welcome']);
     }
   }
+  
 }
