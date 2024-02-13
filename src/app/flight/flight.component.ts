@@ -53,7 +53,7 @@ export class FlightComponent {
       console.log('user has been inactive for 10s');
       toggleWebchat();
     });
-    if (this.departureAirport.toUpperCase() === 'LHR' && this.arrivalAirport.toUpperCase() === 'RUH') {
+    if (this.departureAirport.toUpperCase() != '' || this.arrivalAirport.toUpperCase() != '') {
       this.showSearchResult = true;
     } else {
       this.showSearchResult = false;
