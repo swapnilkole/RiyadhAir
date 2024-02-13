@@ -20,5 +20,6 @@ export const englishdata = {
     cardp8:"Log in to Riyadh Air",
     para7:"Manage every aspect of your loyalty account online. Add your membership number to your booking and earn Riyadh Miles on your flight, or use your Miles to upgrade. Check your Miles balance and see when they’ll expire, and find out how many Tier Miles you need to reach the next membership level. Not a member? Sign up online for free.",
     placeholder2:"Booking Reference",
-    placeholder1:"Last Name"
+    placeholder1:"Last Name",
+    chatbottitle:"Chat with Assistant",
 }

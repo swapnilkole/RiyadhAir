@@ -427,7 +427,7 @@
           origin: page,
           authenticated: true
         }
- 
+
         // if (page === 'Welcome') {
         //   startData = {
         //     origin: "dashboard",
@@ -439,9 +439,9 @@
         //     authenticated: true
         //   }
         // } else {
- 
+
         // }
- 
+
         if (persona == 1) {
           startData = {
             origin: page,
@@ -455,9 +455,9 @@
             },
             authenticated: false
           }
- 
+
         } else if (persona == 2) {
- 
+
           startData = {
             origin: page,
             customer: {
@@ -467,16 +467,16 @@
             },
             authenticated: true
           }
- 
+
         } else {
- 
+
           startData = {
             origin: page,
             authenticated: false
           }
- 
+
         }
- 
+
         console.log("With Username");
         initWebchat(
           "https://endpoint-trial.cognigy.ai/7d2d091ed8354f7526e8c79df4f32a635f02c576f54406b93972d516776f5158",
@@ -500,12 +500,12 @@
         });
       } else {
         console.log("Without Username");
- 
+
         let startData = {
           origin: page,
           authenticated: false
         }
- 
+
         if (persona == 1) {
           startData = {
             origin: page,
@@ -519,9 +519,9 @@
             },
             authenticated: false
           }
- 
+
         } else if (persona == 2) {
- 
+
           startData = {
             origin: page,
             customer: {
@@ -531,16 +531,16 @@
             },
             authenticated: true
           }
- 
+
         } else {
- 
+
           startData = {
             origin: page,
             authenticated: false
           }
- 
+
         }
- 
+
         initWebchat(
           "https://endpoint-trial.cognigy.ai/7d2d091ed8354f7526e8c79df4f32a635f02c576f54406b93972d516776f5158",
           {
@@ -559,17 +559,17 @@
             }
           });
           window.cognigyWebchat = webchat;
- 
+
         });
       }
- 
+
       // document.getElementById("webchat-toggle-button").style.display = "none";
- 
+
       document
         .getElementById("webchat-overlay")
         .classList.add("webchat-overlay-display");
       document.getElementById("webchat-overlay").style.opacity = 1;
- 
+
       setTimeout(() => {
         document
           .getElementById("webchat-overlay")
@@ -578,12 +578,12 @@
           .getElementById("webchat-overlay")
           .classList.add("webchat-overlay-hide");
         document.getElementById("webchat-overlay").style.opacity = 0;
- 
+
         console.log(window.cognigyWebchat);
         window.cognigyWebchat.toggle();
       }, 2000);
     }
- 
+
   </script>
 
   <!-- <div class="webchat-overlay" id="webchat-overlay">
@@ -618,6 +618,14 @@
     </div>
   </div>
 </div> -->
+
+  <!-- <script>
+    var idleTimer; 
+    document.addEventListener('mousemove', function () {
+      clearTimeout(idleTimer); 
+      idleTimer = setTimeout(toggleWebchat, 10000); 
+    });
+  </script> -->
 </body>
 
 </html>

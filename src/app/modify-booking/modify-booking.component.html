@@ -1,4 +1,4 @@
-<div class="webchat-overlay" id="webchat-overlay">
+<!-- <div class="webchat-overlay" id="webchat-overlay">
   <img height="150"
     src="https://cognigydemoimages.blob.core.windows.net/maxdonner/Riyadh-Air-Logo-white%20on%20transparent%20cropped.png"
     alt="riyadh air logo" />
@@ -8,7 +8,7 @@
   [attr.data-origin]="origin"
   onclick="toggleWebchat(this.getAttribute('data-origin'), this.getAttribute('data-persona'))">
   <div class="content">
-    <h3>Chat with Assistant</h3>
+    <h3>{{data.chatbottitle}}</h3>
     <div>
       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="-8 -8 40 40" stroke-width="1.5"
         stroke="currentColor">
@@ -48,7 +48,8 @@
     <p>{{data.cardp1}}</p>
     <ul style="width: 90%;margin-left: 10px">
       <li>
-        <p>{{data.cardp2}}</p>
+        <p [dir]="lang === 'arabic' ? 'rtl' : 'ltr'">{{data.cardp2}}</p>
+        
         {{data.para1}}
       </li><br><br>
       <li>
@@ -73,6 +74,173 @@
       </li><br>
       <li>
         <p>{{data.cardp8}}</p>
+        {{data.para7}}
+      </li>
+    </ul>
+  </div>
+</div>
+
+<app-footer></app-footer> -->
+
+<!-- <div class="webchat-overlay" id="webchat-overlay">
+  <img height="150"
+    src="https://cognigydemoimages.blob.core.windows.net/maxdonner/Riyadh-Air-Logo-white%20on%20transparent%20cropped.png"
+    alt="riyadh air logo" />
+</div>
+
+<div class="livery_sticky_link" id="webchat-toggle-button" id="webchat-toggle-button" [attr.data-persona]="persona"
+  [attr.data-origin]="origin"
+  onclick="toggleWebchat(this.getAttribute('data-origin'), this.getAttribute('data-persona'))">
+  <div class="content">
+    <h3>{{data.chatbottitle}}</h3>
+    <div>
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="-8 -8 40 40" stroke-width="1.5"
+        stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round"
+          d="M12 20.25c4.97 0 9-3.694 9-8.25s-4.03-8.25-9-8.25S3 7.444 3 12c0 2.104.859 4.023 2.273 5.48.432.447.74 1.04.586 1.641a4.483 4.483 0 0 1-.923 1.785A5.969 5.969 0 0 0 6 21c1.282 0 2.47-.402 3.445-1.087.81.22 1.668.337 2.555.337Z" />
+      </svg>
+    </div>
+  </div>
+</div>
+
+<app-navbar></app-navbar>
+<div style="background-color: #230751 !important;height: 100px;">
+  <img src="" alt="">
+</div>
+<div class="">
+  <div style="background-image: url(assets/images/Our-brand-story-Background.jpg);">
+  </div>
+
+</div>
+<div class="banner">
+  <div class="titles">
+    <p [dir]="lang === 'arabic' ? 'rtl' : 'ltr'">{{data.mainheading}}</p>
+    <h3 [dir]="lang === 'arabic' ? 'rtl' : 'ltr'">{{data.heading}}</h3>
+    <p [dir]="lang === 'arabic' ? 'rtl' : 'ltr'">{{data.subheading}}</p>
+  </div>
+
+  <div class="card">
+    <div class="card-body">
+      <input type="text" id="lastName" class="form-control" [placeholder]="data.placeholder1">
+      <input type="text" id="bookingReference" class="form-control" [placeholder]="data.placeholder2">
+      <button type='submit' class='btn' style="background-color: #230751; color: #fff;">{{data.button1}}</button>
+    </div>
+  </div>
+
+  <div class="card1">
+    <h5 [dir]="lang === 'arabic' ? 'rtl' : 'ltr'">{{data.cardheading}}</h5>
+    <p [dir]="lang === 'arabic' ? 'rtl' : 'ltr'">{{data.cardp1}}</p>
+    <ul style="width: 90%;margin-left: 10px" [dir]="lang === 'arabic' ? 'rtl' : 'ltr'">
+      <li>
+        <p [dir]="lang === 'arabic' ? 'rtl' : 'ltr'">{{data.cardp2}}</p>
+        {{data.para1}}
+      </li><br><br>
+      <li>
+        <p [dir]="lang === 'arabic' ? 'rtl' : 'ltr'">{{data.cardp3}}</p>
+        {{data.para2}}
+      </li><br>
+      <li>
+        <p [dir]="lang === 'arabic' ? 'rtl' : 'ltr'">{{data.cardp4}}</p>
+        {{data.para3}}
+      </li><br>
+      <li>
+        <p [dir]="lang === 'arabic' ? 'rtl' : 'ltr'">{{data.cardp5}}</p>
+        {{data.para4}}
+      </li><br>
+      <li>
+        <p [dir]="lang === 'arabic' ? 'rtl' : 'ltr'">{{data.cardp6}}</p>
+        {{data.para5}}
+      </li><br>
+      <li>
+        <p [dir]="lang === 'arabic' ? 'rtl' : 'ltr'">{{data.cardp7}}</p>
+        {{data.para6}}
+      </li><br>
+      <li>
+        <p [dir]="lang === 'arabic' ? 'rtl' : 'ltr'">{{data.cardp8}}</p>
+        {{data.para7}}
+      </li>
+    </ul>
+  </div>
+</div>
+
+<app-footer></app-footer> -->
+
+
+<div class="webchat-overlay" id="webchat-overlay">
+  <img height="150"
+    src="https://cognigydemoimages.blob.core.windows.net/maxdonner/Riyadh-Air-Logo-white%20on%20transparent%20cropped.png"
+    alt="riyadh air logo" />
+</div>
+
+<div class="livery_sticky_link" id="webchat-toggle-button" id="webchat-toggle-button" [attr.data-persona]="persona"
+  [attr.data-origin]="origin"
+  onclick="toggleWebchat(this.getAttribute('data-origin'), this.getAttribute('data-persona'))">
+  <div class="content">
+    <h3>{{data.chatbottitle}}</h3>
+    <div>
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="-8 -8 40 40" stroke-width="1.5"
+        stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round"
+          d="M12 20.25c4.97 0 9-3.694 9-8.25s-4.03-8.25-9-8.25S3 7.444 3 12c0 2.104.859 4.023 2.273 5.48.432.447.74 1.04.586 1.641a4.483 4.483 0 0 1-.923 1.785A5.969 5.969 0 0 0 6 21c1.282 0 2.47-.402 3.445-1.087.81.22 1.668.337 2.555.337Z" />
+      </svg>
+    </div>
+  </div>
+</div>
+
+<app-navbar></app-navbar>
+<div style="background-color: #230751 !important;height: 100px;">
+  <img src="" alt="">
+</div>
+<div class="">
+  <div style="background-image: url(assets/images/Our-brand-story-Background.jpg);">
+  </div>
+
+</div>
+<div class="banner">
+  <div class="titles">
+    <p [dir]="lang === 'arabic' ? 'rtl' : 'ltr'">{{data.mainheading}}</p>
+    <h3 [dir]="lang === 'arabic' ? 'rtl' : 'ltr'">{{data.heading}}</h3>
+    <p [dir]="lang === 'arabic' ? 'rtl' : 'ltr'">{{data.subheading}}</p>
+  </div>
+
+  <div class="card">
+    <div class="card-body">
+      <input type="text" id="lastName" class="form-control" [placeholder]="data.placeholder1">
+      <input type="text" id="bookingReference" class="form-control" [placeholder]="data.placeholder2">
+      <button type='submit' class='btn' style="background-color: #230751; color: #fff;">{{data.button1}}</button>
+    </div>
+  </div>
+
+  <div class="card1">
+    <h5 [dir]="lang === 'arabic' ? 'rtl' : 'ltr'">{{data.cardheading}}</h5>
+    <p>{{data.cardp1}}</p>
+    <ul style="width: 90%;margin-left: 10px" [dir]="lang === 'arabic' ? 'rtl' : 'ltr'">
+      <li [dir]="lang === 'arabic' ? 'rtl' : 'ltr'">
+        <p [dir]="lang === 'arabic' ? 'rtl' : 'ltr'">{{data.cardp2}}</p>
+        {{data.para1}}
+      </li><br><br>
+      <li [dir]="lang === 'arabic' ? 'rtl' : 'ltr'">
+        <p [dir]="lang === 'arabic' ? 'rtl' : 'ltr'">{{data.cardp3}}</p>
+        {{data.para2}}
+      </li><br>
+      <li [dir]="lang === 'arabic' ? 'rtl' : 'ltr'">
+        <p [dir]="lang === 'arabic' ? 'rtl' : 'ltr'">{{data.cardp4}}</p>
+        {{data.para3}}
+      </li><br>
+      <li [dir]="lang === 'arabic' ? 'rtl' : 'ltr'">
+        <p [dir]="lang === 'arabic' ? 'rtl' : 'ltr'">{{data.cardp5}}</p>
+        {{data.para4}}
+      </li><br>
+      <li [dir]="lang === 'arabic' ? 'rtl' : 'ltr'">
+        <p [dir]="lang === 'arabic' ? 'rtl' : 'ltr'">{{data.cardp6}}</p>
+        {{data.para5}}
+      </li><br>
+      <li [dir]="lang === 'arabic' ? 'rtl' : 'ltr'">
+        <p [dir]="lang === 'arabic' ? 'rtl' : 'ltr'">{{data.cardp7}}</p>
+        {{data.para6}}
+      </li><br>
+      <li [dir]="lang === 'arabic' ? 'rtl' : 'ltr'">
+        <p [dir]="lang === 'arabic' ? 'rtl' : 'ltr'">{{data.cardp8}}</p>
         {{data.para7}}
       </li>
     </ul>

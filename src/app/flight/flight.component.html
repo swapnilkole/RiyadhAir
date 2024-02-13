@@ -1,3 +1,4 @@
+
 <div class="webchat-overlay" id="webchat-overlay">
     <img
       height="150"
@@ -45,14 +46,14 @@
         <p>Search for Riyadh flights and book online. See our routes <br> and schedules, and discover more about the
             experience you <br> can look forward to on board.</p>
     </div>
-    <div class="booking-form">
+    <!-- <div class="booking-form">
         <div class="header">
             <p>Log in to earn and spend Riyadh Air</p>
             <a href="#">Advanced search: multicity, promo codes, partner airlines</a>
         </div>
         <form action="/search-flights" method="post">
             <div class="input-group">
-                <input type="text" name="departureAirport" placeholder="Departure airport">
+                <input type="text" name="departureAirport" placeholder="Departure airport" >
                 <input type="text" name="arrivalAirport" placeholder="Arrival airport">
                 <input type="date" name="departingDate" placeholder="Departing">
                 <input type="date" name="returningDate" placeholder="Returning">
@@ -68,10 +69,94 @@
                     <option value="business">Business Class</option>
                     <option value="first">First Class</option>
                 </select>
-                <button type="submit" style="background-color: #230751; color: #fff;">Search flights</button>
+                <button type="submit" style="background-color: #230751; color: #fff;" (click)="searchFlights()">Search flights</button>
             </div>
         </form>
+        <div *ngIf="showSearchResult" class="search-result">
+          <p>Departure: {{ departureAirport }}</p>
+          <p>Arrival: {{ arrivalAirport }}</p>
+        </div>
+    </div> -->
+    <div class="booking-form">
+      <div class="header">
+          <p>Log in to earn and spend Riyadh Air</p>
+          <a href="#">Advanced search: multicity, promo codes, partner airlines</a>
+      </div>
+      <form (ngSubmit)="searchFlights()" action="/search-flights" method="post">
+          <div class="input-group">
+              <input type="text" [(ngModel)]="departureAirport" name="departureAirport" placeholder="Departure airport">
+              <input type="text" [(ngModel)]="arrivalAirport" name="arrivalAirport" placeholder="Arrival airport">
+              <input type="date" [(ngModel)]="departingDate" name="departingDate" placeholder="Departing">
+              <input type="date" [(ngModel)]="returningDate" name="returningDate" placeholder="Returning">
+          </div>
+          <div class="select-group">
+              <select name="passengers">
+                  <option value="1">1 Adult</option>
+                  <option value="2">2 Adult</option>
+                  <option value="3">3 Adult</option>
+              </select>
+              <select name="class">
+                  <option value="economy">Economy Class</option>
+                  <option value="business">Business Class</option>
+                  <option value="first">Premium Economy</option>
+              </select>
+              <button type="submit" style="background-color: #230751; color: #fff;">Search flights</button>
+          </div>
+      </form>
+      <h3 *ngIf="showSearchResult" class="pt-4">Search Result</h3>
+      <div *ngIf="showSearchResult" class="search-result" style="display: flex;padding: 10px;gap: 100px;justify-content: center;">
+        <div class="flight-info">
+          <div class="flight">
+              <p>{{departingDate}}</p>
+              <!-- <p>0 Stops</p> -->
+              <p>{{ departureAirport }} &rarr; {{ arrivalAirport }}</p>
+              <p>&#x2708; LH915 15:00 - 18:40</p>
+          </div>
+  
+          <div class="flight1">
+              <p> {{returningDate}} </p>
+              <!-- <p>0 Stops</p> -->
+              <p>{{ arrivalAirport }} &rarr; {{ departureAirport }} </p>
+              <span>&#x2708; RX926 5:00 - 8:10 </span><span class="price">£1,015</span><br/>
+              <button class="m-2" style="background-color: #230751;padding: 8px 30px;">Select</button>
+          </div>
+      </div>
+      <div class="flight-info">
+          <div class="flight">
+            <p>{{departingDate}}</p>
+              <!-- <p>0 Stops</p> -->
+              <p>{{ departureAirport }} &rarr; {{ arrivalAirport }}</p>
+              <p>&#x2708; LH915 15:00 - 18:40</p>
+          </div>
+  
+          <div class="flight1">
+            <p> {{returningDate}} </p>
+              <!-- <p>0 Stops</p> -->
+              <p>{{ arrivalAirport }} &rarr; {{ departureAirport }} </p>
+              <span>&#x2708; RX926 5:00 - 8:10 </span> <span class="price">£1,015</span><br/> 
+              <button class="m-2" style="background-color: #230751;padding: 8px 30px;">Select</button>
+          </div>
+      </div>
+      <div class="flight-info">
+          <div class="flight">
+            <p>{{departingDate}}</p>
+              <!-- <p>0 Stops</p> -->
+              <p>{{ departureAirport }} &rarr; {{ arrivalAirport }}</p>
+              <p>&#x2708; LH915 15:00 - 18:40</p>
+          </div>
+  
+          <div class="flight1">
+            <p> {{returningDate}} </p>
+              <!-- <p>0 Stops</p> -->
+              <p>{{ arrivalAirport }} &rarr; {{ departureAirport }} </p>
+              <span>&#x2708; RX926 5:00 - 8:10 </span><span class="price">£1,015</span><br/>
+              <button class="m-2" style="background-color: #230751;padding: 8px 30px;">Select</button>
+          </div>
+      </div>
     </div>
+  </div>
+  
+
     <div class="card1" style="text-align: left;    font-family: 'quiche-sans';">
         <h5>How to book a flight ticket with Riyadh Air</h5><br>
         <ul>

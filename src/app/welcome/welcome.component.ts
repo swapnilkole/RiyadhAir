@@ -8,7 +8,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 })
 export class WelcomeComponent {
 
-  persona = 3;
+  persona = 1;
   origin= "Welcome";
 
 constructor(private router:Router,private activatedRoute: ActivatedRoute){

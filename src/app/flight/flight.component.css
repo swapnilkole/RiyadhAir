@@ -1,3 +1,22 @@
+/* styles.css */
+.flight-info {
+    width: max-content;
+}
+.flight1{
+    background-color: #DADAFF;
+    padding: 20px;
+
+}
+.flight {
+    background-color: #230751;
+    color: #fff;
+    padding: 20px;
+    margin-bottom: 5px;
+}
+/* 
+.price {
+    color: #fff;
+} */
 
 
 

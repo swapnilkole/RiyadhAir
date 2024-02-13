@@ -12,6 +12,24 @@ export class ModifyBookingComponent {
   persona = 3;
   origin= "modify-booking";
   data = englishdata;
+  lang='english';
+
+  // constructor(private activatedRoute: ActivatedRoute){
+  //   this.activatedRoute.queryParams.subscribe(params => {
+  //     if(params['persona']){
+  //       if(params['persona'] === 'any'){
+  //         this.origin = params['origin'];
+  //       }
+  //       if(this.origin === 'arabic'){
+
+  //         this.data = arabicdata;
+
+  //       }
+  //       this.persona = params['persona'];
+  //     }
+  //     console.log("Persona : "+this.persona);
+  //   });
+  // }
 
   constructor(private activatedRoute: ActivatedRoute){
     this.activatedRoute.queryParams.subscribe(params => {
@@ -20,6 +38,7 @@ export class ModifyBookingComponent {
           this.origin = params['origin'];
         }
         if(this.origin === 'arabic'){
+          this.lang = 'arabic';
           this.data = arabicdata;
         }
         this.persona = params['persona'];
@@ -27,4 +46,5 @@ export class ModifyBookingComponent {
       console.log("Persona : "+this.persona);
     });
   }
+  
 }
