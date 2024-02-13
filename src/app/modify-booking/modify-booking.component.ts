@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { englishdata } from './english';
+import { arabicdata } from './arabic';
 
 @Component({
   selector: 'app-modify-booking',
@@ -9,11 +11,16 @@ import { ActivatedRoute } from '@angular/router';
 export class ModifyBookingComponent {
   persona = 3;
   origin= "modify-booking";
+  data = englishdata;
+
   constructor(private activatedRoute: ActivatedRoute){
     this.activatedRoute.queryParams.subscribe(params => {
       if(params['persona']){
         if(params['persona'] === 'any'){
           this.origin = params['origin'];
+        }
+        if(this.origin === 'arabic'){
+          this.data = arabicdata;
         }
         this.persona = params['persona'];
       }

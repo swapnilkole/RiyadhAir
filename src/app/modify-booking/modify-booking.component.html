@@ -1,117 +1,82 @@
 <div class="webchat-overlay" id="webchat-overlay">
-    <img
-      height="150"
-      src="https://cognigydemoimages.blob.core.windows.net/maxdonner/Riyadh-Air-Logo-white%20on%20transparent%20cropped.png"
-      alt="riyadh air logo"
-    />
-  </div>
-  
-  <div
-    class="livery_sticky_link"
-    id="webchat-toggle-button"
-    id="webchat-toggle-button" [attr.data-persona]="persona" [attr.data-origin]="origin"
-    onclick="toggleWebchat(this.getAttribute('data-origin'), this.getAttribute('data-persona'))"
-  >
-    <div class="content">
-      <h3>Chat with Assistant</h3>
-      <div>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="-8 -8 40 40"
-          stroke-width="1.5"
-          stroke="currentColor"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            d="M12 20.25c4.97 0 9-3.694 9-8.25s-4.03-8.25-9-8.25S3 7.444 3 12c0 2.104.859 4.023 2.273 5.48.432.447.74 1.04.586 1.641a4.483 4.483 0 0 1-.923 1.785A5.969 5.969 0 0 0 6 21c1.282 0 2.47-.402 3.445-1.087.81.22 1.668.337 2.555.337Z"
-          />
-        </svg>
-      </div>
+  <img height="150"
+    src="https://cognigydemoimages.blob.core.windows.net/maxdonner/Riyadh-Air-Logo-white%20on%20transparent%20cropped.png"
+    alt="riyadh air logo" />
+</div>
+
+<div class="livery_sticky_link" id="webchat-toggle-button" id="webchat-toggle-button" [attr.data-persona]="persona"
+  [attr.data-origin]="origin"
+  onclick="toggleWebchat(this.getAttribute('data-origin'), this.getAttribute('data-persona'))">
+  <div class="content">
+    <h3>Chat with Assistant</h3>
+    <div>
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="-8 -8 40 40" stroke-width="1.5"
+        stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round"
+          d="M12 20.25c4.97 0 9-3.694 9-8.25s-4.03-8.25-9-8.25S3 7.444 3 12c0 2.104.859 4.023 2.273 5.48.432.447.74 1.04.586 1.641a4.483 4.483 0 0 1-.923 1.785A5.969 5.969 0 0 0 6 21c1.282 0 2.47-.402 3.445-1.087.81.22 1.668.337 2.555.337Z" />
+      </svg>
     </div>
   </div>
+</div>
 
 <app-navbar></app-navbar>
 <div style="background-color: #230751 !important;height: 100px;">
-    <img src="" alt="">
+  <img src="" alt="">
 </div>
 <div class="">
-    <div style="background-image: url(assets/images/Our-brand-story-Background.jpg);">
-    </div>
+  <div style="background-image: url(assets/images/Our-brand-story-Background.jpg);">
+  </div>
 
 </div>
 <div class="banner">
-    <div class="titles">
-        <p>MANAGE</p>
-        <h3>Manage your booking</h3>
-        <p>Enter your details to see your itinerary, make changes and <br> add extra services.</p>
+  <div class="titles">
+    <p>{{data.mainheading}}</p>
+    <h3>{{data.heading}}</h3>
+    <p>{{data.subheading}}</p>
+  </div>
+
+  <div class="card">
+    <div class="card-body">
+      <input type="text" id="lastName" class="form-control" [placeholder]="data.placeholder1">
+      <input type="text" id="bookingReference" class="form-control" [placeholder]="data.placeholder2">
+      <button type='submit' class='btn' style="background-color: #230751; color: #fff;">{{data.button1}}</button>
     </div>
+  </div>
 
-    <div class="card">
-        <div class="card-body">
-            <input type="text" id="lastName" class="form-control" placeholder="Last Name">
-            <input type="text" id="bookingReference" class="form-control" placeholder="Booking Reference">
-            <button type='submit' class='btn' style="background-color: #230751; color: #fff;">Retrieve Booking</button>
-        </div>
-    </div>
-
-    <div class="card1">
-        <h5>Tailor your Riyadh experience</h5>
-        <p>There’s so much you can do with our booking management tool and you can take control of your journey in just
-            a few clicks. It’s easy and secure ‑ just have your booking reference and your last name ready to get
-            started.
-        </p>
-        <ul style="width: 90%;margin-left: 10px">
-            <li>
-                <p>Manage your booking</p>
-                You can edit and manage all your travel needs online. Book a dietary meal if you have a specific diet,
-                upgrade your seat, and add a hotel or car rental to your booking. You can also book services like
-                Chauffeur‑drive.
-            </li><br><br>
-            <li>
-                <p>Check your itinerary</p>
-
-                View, print or email your flight itinerary. Check your flight details and make changes to your booking.
-
-            </li><br>
-            <li>
-                <p>Select a seat
-                </p>
-                Choose where you want to sit on the plane. Explore our immersive 3D seat map and get a feel for the
-                experience before you select your seat. Choosing your seat on the flight also means your family or
-                friends can sit together when you’re flying in a large group. Through Manage your booking you can change
-                your seat at any time up until check‑in.
-            </li><br>
-            <li>
-                <p>Update your email address and contact number
-                </p>Keep your details up to date so we can send you notifications about your flights’ status, any
-                disruptions, or if there’s a chance to upgrade.
-
-            </li><br>
-            <li>
-                <p>Check‑in online</p>
-                Save time at the airport and check‑in online between 48 hours and 90 minutes before your flight. You can
-                also use mobile check‑in and download your boarding pass on your phone. When you check‑in online, you
-                can choose your seat for free.
-
-            </li><br>
-            <li>
-                <p>Buy excess baggage allowance</p>
-                See the weight limit for checked‑in baggage and carry‑on baggage, and if you need more you can pay for
-                extra baggage online for 20% less than at the airport. Check our baggage rules before you fly.
-
-            </li><br>
-            <li>
-                <p>Log in to Riyadh Air</p>
-                Manage every aspect of your loyalty account online. Add your membership number to your booking and earn
-                Skywards Miles on your flight, or use your Miles to upgrade. Check your Miles balance and see when
-                they’ll expire, and find out how many Tier Miles you need to reach the next membership level. Not a
-                member? Sign up online for free.
-
-            </li>
-        </ul>
-    </div>
+  <div class="card1">
+    <h5>{{data.cardheading}}</h5>
+    <p>{{data.cardp1}}</p>
+    <ul style="width: 90%;margin-left: 10px">
+      <li>
+        <p>{{data.cardp2}}</p>
+        {{data.para1}}
+      </li><br><br>
+      <li>
+        <p>{{data.cardp3}}</p>
+        {{data.para2}}
+      </li><br>
+      <li>
+        <p>{{data.cardp4}}</p>
+        {{data.para3}}
+      </li><br>
+      <li>
+        <p>{{data.cardp5}}</p>
+        {{data.para4}}
+      </li><br>
+      <li>
+        <p>{{data.cardp6}}</p>
+        {{data.para5}}
+      </li><br>
+      <li>
+        <p>{{data.cardp7}}</p>
+        {{data.para6}}
+      </li><br>
+      <li>
+        <p>{{data.cardp8}}</p>
+        {{data.para7}}
+      </li>
+    </ul>
+  </div>
 </div>
 
 <app-footer></app-footer>
